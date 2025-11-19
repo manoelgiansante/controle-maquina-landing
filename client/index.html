@@ -9,9 +9,9 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="%VITE_APP_LOGO%" />
-    <link rel="apple-touch-icon" href="%VITE_APP_LOGO%" />
-    <title>%VITE_APP_TITLE%</title>
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <title>Controle de Máquina - Economize até 30% em combustível</title>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -26,9 +26,6 @@
       fbq('init', '1314795250329336');
       fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1314795250329336&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Add Google Fonts here, example:
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,12 +35,20 @@
   </head>
 
   <body>
+    <!-- Facebook Pixel noscript -->
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1314795250329336&ev=PageView&noscript=1"
+    /></noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Umami Analytics - uncomment and configure if needed
     <script
       defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+      src="YOUR_UMAMI_ENDPOINT/umami"
+      data-website-id="YOUR_WEBSITE_ID"></script>
+    -->
   </body>
 
 </html>
