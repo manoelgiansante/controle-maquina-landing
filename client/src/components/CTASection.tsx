@@ -11,7 +11,7 @@ export default function CTASection() {
         currency: 'BRL'
       });
     }
-    window.location.href = "https://controledemaquina.com.br/login?mode=register";
+    window.location.href = "https://app.controledemaquina.com.br/login";
   };
 
   return (

@@ -22,7 +22,7 @@ export default function Navbar() {
         currency: 'BRL'
       });
     }
-    window.location.href = "https://controledemaquina.com.br/login?mode=register";
+    window.location.href = "https://app.controledemaquina.com.br/login";
   };
 
   return (
@@ -56,7 +56,7 @@ export default function Navbar() {
               Preços
             </a>
             <Button variant="outline" size="sm" onClick={() => {
-              window.location.href = "https://controledemaquina.com.br/login";
+              window.location.href = "https://app.controledemaquina.com.br/login";
             }}>
               Entrar
             </Button>
