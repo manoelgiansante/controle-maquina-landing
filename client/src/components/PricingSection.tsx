@@ -42,13 +42,23 @@ const plans = [
 
 export default function PricingSection() {
   const handleCTA = () => {
-    // Dispara evento de Lead no Facebook Pixel
+    // Dispara eventos no Facebook Pixel para otimização de campanhas
     if (typeof window !== 'undefined' && window.fbq) {
+      // Evento de Lead
       window.fbq('track', 'Lead', {
         content_name: 'Criar Conta - Teste Grátis',
         content_category: 'Signup',
         value: 0,
         currency: 'BRL'
+      });
+
+      // Evento de InitiateCheckout com PIX para conversões
+      window.fbq('track', 'InitiateCheckout', {
+        content_name: 'Teste Grátis - PIX',
+        content_category: 'Subscription',
+        value: 19.90,
+        currency: 'BRL',
+        payment_method: 'PIX'
       });
     }
     window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
