@@ -84,15 +84,13 @@ export default function HeroSection() {
           {/* Right Content - Video */}
           <div className="relative">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-border">
-              <video
+              <iframe
                 className="w-full h-full"
-                controls
-                preload="metadata"
-                poster="/logo.png"
-              >
-                <source src="/video-apresentacao.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos HTML5.
-              </video>
+                src="https://www.youtube.com/embed/-vF6aiTApWI"
+                title="Controle de Máquina - Pare de perder diesel!"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
 
             {/* Floating Stats Cards */}
