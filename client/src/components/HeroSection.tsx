@@ -12,7 +12,7 @@ export default function HeroSection() {
         currency: 'BRL'
       });
     }
-    window.location.href = "https://app.controledemaquina.com.br/login";
+    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
   };
 
   return (
@@ -68,27 +68,6 @@ export default function HeroSection() {
               >
                 Ver Funcionalidades
               </Button>
-            </div>
-
-            {/* Social Proof */}
-            <div className="pt-6 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-3">
-                Mais de <span className="font-bold text-foreground">1.230 produtores</span> já economizam com a gente
-              </p>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-yellow-400 fill-current"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-                <span className="ml-2 text-sm text-muted-foreground">
-                  4.9/5 de avaliação
-                </span>
-              </div>
             </div>
           </div>
 

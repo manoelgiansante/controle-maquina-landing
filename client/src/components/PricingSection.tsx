@@ -51,7 +51,7 @@ export default function PricingSection() {
         currency: 'BRL'
       });
     }
-    window.location.href = "https://app.controledemaquina.com.br/login";
+    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
   };
 
   return (

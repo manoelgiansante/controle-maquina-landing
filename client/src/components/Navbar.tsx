@@ -22,7 +22,7 @@ export default function Navbar() {
         currency: 'BRL'
       });
     }
-    window.location.href = "https://app.controledemaquina.com.br/login";
+    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
   };
 
   return (
@@ -58,7 +58,7 @@ export default function Navbar() {
             <Button variant="outline" size="sm" onClick={() => {
               window.location.href = "https://app.controledemaquina.com.br/login";
             }}>
-              Entrar
+              Entrar App
             </Button>
             <Button size="sm" onClick={handleCTA}>
               Teste Grátis
