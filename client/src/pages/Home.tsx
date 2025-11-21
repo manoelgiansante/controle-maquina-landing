@@ -6,7 +6,6 @@ import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PricingSectionNew from "@/components/PricingSectionNew";
 import FeaturesComparisonSection from "@/components/FeaturesComparisonSection";
-import CompetitorComparisonSection from "@/components/CompetitorComparisonSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -19,7 +18,6 @@ export default function Home() {
       <ProblemsSection />
       <HowItWorksSection />
       <FeaturesSection />
-      <CompetitorComparisonSection />
       <PricingSectionNew />
       <FeaturesComparisonSection />
       <TestimonialsSection />
