@@ -26,7 +26,7 @@ const STRIPE_PRICE_IDS = {
 const STRIPE_PAYMENT_LINKS = {
   basic: {
     monthly: "https://buy.stripe.com/14AaEX3oVfOi7SYauO5Vu00",
-    yearly: "https://buy.stripe.com/7sY8zn3cta0028YdQS"
+    yearly: "https://buy.stripe.com/9B6bJ12kR8lQ3CIbyS5Vu01"
   },
   pro: {
     monthly: "https://buy.stripe.com/bIY7vjdR70ls5L6dQT",
