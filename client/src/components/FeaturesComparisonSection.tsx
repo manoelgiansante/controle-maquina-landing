@@ -117,9 +117,9 @@ export default function FeaturesComparisonSection() {
 
         {/* Desktop Table */}
         <div className="hidden lg:block">
-          <div className="bg-card rounded-2xl border border-border shadow-xl overflow-visible mt-8">
+          <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden">
             {/* Plan Headers */}
-            <div className="grid grid-cols-5 rounded-t-2xl overflow-hidden">
+            <div className="grid grid-cols-5">
               <div className="p-6 bg-muted/50 border-b border-r border-border">
                 <h3 className="font-bold text-lg text-foreground">Funcionalidades</h3>
                 <p className="text-sm text-muted-foreground mt-1">Tudo que você precisa</p>
@@ -127,10 +127,10 @@ export default function FeaturesComparisonSection() {
               {plans.map((plan, idx) => (
                 <div 
                   key={plan.id} 
-                  className={`p-6 pt-10 text-center relative border-b border-border ${idx < plans.length - 1 ? 'border-r' : ''} ${plan.popular ? 'bg-primary' : 'bg-muted/30'}`}
+                  className={`p-6 text-center border-b border-border ${idx < plans.length - 1 ? 'border-r' : ''} ${plan.popular ? 'bg-primary' : 'bg-muted/30'}`}
                 >
                   {plan.badge && (
-                    <div className={`absolute top-2 left-1/2 transform -translate-x-1/2 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-md whitespace-nowrap ${plan.popular ? 'bg-yellow-400 text-yellow-900' : 'bg-orange-400 text-white'}`}>
+                    <div className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold mb-3 ${plan.popular ? 'bg-yellow-400 text-yellow-900' : 'bg-orange-400 text-white'}`}>
                       <plan.badge.icon className="w-3 h-3" />
                       {plan.badge.text}
                     </div>
