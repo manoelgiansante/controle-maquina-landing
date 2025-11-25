@@ -17,9 +17,19 @@ const faqs = [
       "Não! O app funciona offline e sincroniza automaticamente quando a conexão voltar. Você pode registrar abastecimentos e manutenções mesmo sem internet.",
   },
   {
+    question: "Como funciona o GPS Controle de Máquina?",
+    answer:
+      "No plano Pro, você visualiza suas máquinas no mapa em tempo real, cria áreas/talhões, configura alertas de perímetro (quando a máquina sai da área) e alertas de velocidade. Também pode importar arquivos KML se já tiver suas áreas mapeadas!",
+  },
+  {
+    question: "O que são alertas de perímetro?",
+    answer:
+      "Alertas de perímetro avisam você por notificação push quando uma máquina sai ou entra em uma área definida. Perfeito para evitar uso não autorizado e monitorar onde suas máquinas estão trabalhando!",
+  },
+  {
     question: "Quantas máquinas posso cadastrar?",
     answer:
-      "No Plano Básico você pode cadastrar até 10 máquinas. No Plano Premium, o número de máquinas é ILIMITADO!",
+      "No Plano Básico você pode cadastrar até 10 máquinas. No Plano Pro até 50 máquinas. No Enterprise, o número é ILIMITADO!",
   },
   {
     question: "E se eu não gostar?",
@@ -27,9 +37,14 @@ const faqs = [
       "Você pode cancelar em 1 clique durante os 7 dias grátis, sem burocracia e sem precisar falar com ninguém. Não pedimos cartão de crédito no teste.",
   },
   {
-    question: "Como funcionam os alertas?",
+    question: "Como funcionam os alertas de manutenção?",
     answer:
       "Alertas amarelos quando faltam 10% para revisão, vermelhos quando vence. Você recebe notificações por email e push no celular. Além disso, recebe um email diário às 21h com resumo completo!",
+  },
+  {
+    question: "Posso importar áreas de arquivos KML?",
+    answer:
+      "Sim! Se você já tem suas áreas/talhões mapeados em arquivos KML (do Google Earth ou outros sistemas), pode importar diretamente no app. O sistema cria as áreas automaticamente sem precisar desenhar no mapa!",
   },
   {
     question: "Posso registrar custos de manutenção?",
@@ -44,7 +59,7 @@ const faqs = [
   {
     question: "Posso exportar relatórios?",
     answer:
-      "Sim! Você pode exportar relatórios de manutenções, abastecimentos e custos em PDF (todos os planos) ou Excel/CSV (Plano Premium). Filtre por período e máquina!",
+      "Sim! Você pode exportar relatórios de manutenções, abastecimentos e custos em PDF (todos os planos) ou Excel/CSV (planos pagos). Filtre por período e máquina!",
   },
 ];
 

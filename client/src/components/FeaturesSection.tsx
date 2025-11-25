@@ -1,6 +1,24 @@
-import { Fuel, Bell, Mail, Droplet, Wrench, Building2, Smartphone, TrendingDown, FileText } from "lucide-react";
+import { Fuel, Bell, Mail, Droplet, Wrench, Building2, Smartphone, TrendingDown, FileText, MapPin, Shield, Gauge, FileUp } from "lucide-react";
 
 const features = [
+  {
+    icon: MapPin,
+    title: "GPS Controle de Máquina",
+    description:
+      "Visualize suas máquinas no mapa em tempo real. Crie áreas/talhões, importe arquivos KML e monitore toda a frota de qualquer lugar!",
+  },
+  {
+    icon: Shield,
+    title: "Alertas de Perímetro",
+    description:
+      "Receba notificações push quando uma máquina sair da área permitida. Proteja sua frota e evite uso não autorizado!",
+  },
+  {
+    icon: Gauge,
+    title: "Alertas de Velocidade",
+    description:
+      "Configure limites de velocidade por máquina. Alerta automático quando exceder o limite. Reduza desgaste e acidentes!",
+  },
   {
     icon: Fuel,
     title: "Gestão Completa de Tanque",
@@ -42,6 +60,12 @@ const features = [
     title: "Funciona Offline",
     description:
       "Registre abastecimentos e manutenções sem internet. Sincroniza automaticamente quando a conexão voltar. Web, iOS e Android!",
+  },
+  {
+    icon: FileUp,
+    title: "Importar Áreas KML",
+    description:
+      "Já tem suas áreas mapeadas? Importe arquivos KML e crie talhões automaticamente no mapa. Simples e rápido!",
   },
   {
     icon: TrendingDown,

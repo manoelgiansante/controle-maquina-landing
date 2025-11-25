@@ -12,6 +12,17 @@ const features = [
     ],
   },
   {
+    category: "GPS e Monitoramento",
+    items: [
+      { name: "GPS Controle de Máquina", free: false, basic: false, pro: true, enterprise: true, provider: true },
+      { name: "Alertas de perímetro", free: false, basic: false, pro: true, enterprise: true, provider: true },
+      { name: "Alertas de velocidade", free: false, basic: false, pro: true, enterprise: true, provider: true },
+      { name: "Criação de áreas/talhões", free: false, basic: false, pro: true, enterprise: true, provider: true },
+      { name: "Importar arquivos KML", free: false, basic: false, pro: true, enterprise: true, provider: true },
+      { name: "Notificações push", free: false, basic: false, pro: true, enterprise: true, provider: true },
+    ],
+  },
+  {
     category: "Inteligência e Análise",
     items: [
       { name: "Dashboard com gráficos", free: false, basic: true, pro: true, enterprise: true, provider: true },
@@ -35,8 +46,6 @@ const features = [
   {
     category: "Avançado",
     items: [
-      { name: "GPS tracking", free: false, basic: false, pro: true, enterprise: true, provider: true },
-      { name: "Notificações por email", free: false, basic: false, pro: true, enterprise: true, provider: true },
       { name: "Integração IoT", free: false, basic: false, pro: false, enterprise: true, provider: false },
       { name: "Gestão financeira", free: false, basic: false, pro: false, enterprise: true, provider: false },
       { name: "API completa", free: false, basic: false, pro: false, enterprise: true, provider: false },
