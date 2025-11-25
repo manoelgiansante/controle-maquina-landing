@@ -94,9 +94,9 @@ export default function HeroSection() {
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-border">
               <iframe
                 className="w-full h-full"
-                src="https://player.vimeo.com/video/1140502256"
+                src="https://www.youtube.com/embed/-vF6aiTApWI"
                 title="Controle de Máquina - Pare de perder diesel!"
-                allow="autoplay; fullscreen; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
             </div>
@@ -111,9 +111,6 @@ export default function HeroSection() {
               <p className="text-sm text-muted-foreground">Produtores</p>
               <p className="text-2xl font-bold text-accent">500+</p>
               <p className="text-xs text-muted-foreground">confiam em nós</p>
-            </div>
-            <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-green-500 text-white rounded-lg px-3 py-2 shadow-lg hidden lg:block">
-              <p className="text-xs font-bold">✅ Teste grátis 7 dias</p>
             </div>
           </div>
         </div>
