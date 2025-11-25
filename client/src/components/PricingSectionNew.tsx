@@ -25,7 +25,7 @@ const STRIPE_PRICE_IDS = {
 // Stripe Payment Links (criar no painel Stripe)
 const STRIPE_PAYMENT_LINKS = {
   basic: {
-    monthly: "https://buy.stripe.com/cN2cPDdR76JO1uU001",
+    monthly: "https://buy.stripe.com/14AaEX3oVfOi7SYauO5Vu00",
     yearly: "https://buy.stripe.com/7sY8zn3cta0028YdQS"
   },
   pro: {
