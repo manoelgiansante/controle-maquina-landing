@@ -39,23 +39,24 @@ export default function HeroSection() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Saiba onde suas máquinas estão{" "}
-              <span className="text-primary">agora mesmo</span>
+              Controle total da sua{" "}
+              <span className="text-primary">frota agrícola</span>{" "}
+              na palma da mão
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              GPS em tempo real + alertas de perímetro + controle de combustível. 
-              Economize até{" "}
-              <span className="font-bold text-accent">30% em diesel</span> e proteja sua frota contra uso não autorizado.
+              GPS em tempo real, alertas inteligentes, controle de combustível e manutenções. 
+              Tudo em um app simples que funciona{" "}
+              <span className="font-bold text-accent">offline</span> no campo.
             </p>
 
             {/* Benefits List */}
             <div className="grid grid-cols-2 gap-3">
               {[
                 { icon: MapPin, text: "GPS em tempo real" },
-                { icon: Shield, text: "Alertas de perímetro" },
-                { icon: Zap, text: "7 dias grátis" },
-                { icon: Check, text: "Sem cartão" },
+                { icon: Shield, text: "Alertas inteligentes" },
+                { icon: Zap, text: "Funciona offline" },
+                { icon: Check, text: "iOS, Android e Web" },
               ].map((benefit) => (
                 <div key={benefit.text} className="flex items-center gap-2">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -102,17 +103,17 @@ export default function HeroSection() {
 
             {/* Floating Stats Cards */}
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
-              <p className="text-sm text-muted-foreground">Economia Média</p>
-              <p className="text-2xl font-bold text-primary">30%</p>
-              <p className="text-xs text-muted-foreground">em combustível</p>
-            </div>
-            <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
               <p className="text-sm text-muted-foreground">Máquinas</p>
-              <p className="text-2xl font-bold text-accent">10.000+</p>
+              <p className="text-2xl font-bold text-primary">10.000+</p>
               <p className="text-xs text-muted-foreground">monitoradas</p>
             </div>
+            <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
+              <p className="text-sm text-muted-foreground">Produtores</p>
+              <p className="text-2xl font-bold text-accent">500+</p>
+              <p className="text-xs text-muted-foreground">confiam em nós</p>
+            </div>
             <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-green-500 text-white rounded-lg px-3 py-2 shadow-lg hidden lg:block">
-              <p className="text-xs font-bold">🛡️ Alerta de Perímetro</p>
+              <p className="text-xs font-bold">✅ Teste grátis 7 dias</p>
             </div>
           </div>
         </div>

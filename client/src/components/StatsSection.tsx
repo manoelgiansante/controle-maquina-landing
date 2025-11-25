@@ -1,4 +1,4 @@
-import { Fuel, MapPin, Users, TrendingDown } from "lucide-react";
+import { Fuel, MapPin, Users, Smartphone } from "lucide-react";
 
 const stats = [
   {
@@ -14,10 +14,10 @@ const stats = [
     description: "por mês",
   },
   {
-    icon: TrendingDown,
-    value: "30%",
-    label: "Economia Média",
-    description: "em combustível",
+    icon: Smartphone,
+    value: "3",
+    label: "Plataformas",
+    description: "iOS, Android e Web",
   },
   {
     icon: Users,

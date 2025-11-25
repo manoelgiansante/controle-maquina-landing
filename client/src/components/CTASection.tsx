@@ -31,10 +31,10 @@ export default function CTASection() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
-              Comece a monitorar sua frota hoje mesmo
+              Simplifique a gestão da sua frota hoje
             </h2>
             <p className="text-xl text-primary-foreground/90">
-              GPS em tempo real + alertas de perímetro + controle de combustível. 
+              GPS, alertas, combustível e manutenções em um único app. 
               Teste grátis por 7 dias, sem cartão.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
