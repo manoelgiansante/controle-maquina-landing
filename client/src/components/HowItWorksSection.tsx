@@ -1,4 +1,4 @@
-import { FileText, Fuel, TrendingUp } from "lucide-react";
+import { FileText, Fuel, TrendingUp, MapPin } from "lucide-react";
 
 export default function HowItWorksSection() {
   const steps = [
@@ -8,14 +8,19 @@ export default function HowItWorksSection() {
       description: "Adicione suas máquinas com nome, tipo e horímetro atual. Leva apenas 2 minutos."
     },
     {
+      icon: MapPin,
+      title: "2. Crie suas Áreas",
+      description: "Desenhe os perímetros no mapa ou importe arquivos KML. Configure alertas de saída."
+    },
+    {
       icon: Fuel,
-      title: "2. Registre Abastecimentos",
-      description: "Toda vez que abastecer ou fazer manutenção, registre no app. Leva 30 segundos."
+      title: "3. Registre Operações",
+      description: "Abastecimentos e manutenções em 30 segundos. Funciona offline!"
     },
     {
       icon: TrendingUp,
-      title: "3. Economize e Controle",
-      description: "Veja consumo, receba alertas de manutenção e identifique onde economizar."
+      title: "4. Economize e Controle",
+      description: "Veja tudo em tempo real: localização, consumo, alertas e relatórios."
     }
   ];
 
@@ -24,14 +29,14 @@ export default function HowItWorksSection() {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Como Funciona em 3 Passos
+            Como Funciona em 4 Passos Simples
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Simples, rápido e eficiente. Comece a economizar hoje mesmo.
+            Comece a monitorar sua frota em minutos. Simples assim.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (

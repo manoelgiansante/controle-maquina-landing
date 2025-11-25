@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, MapPin, Shield, Zap } from "lucide-react";
 
 export default function HeroSection() {
   const handleCTA = () => {
@@ -31,30 +31,37 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-
+            {/* Badge de Novidade */}
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-sm font-semibold text-primary">NOVO: GPS Controle de Máquina</span>
+              <span className="bg-primary text-primary-foreground text-xs px-2 py-0.5 rounded-full">2025</span>
+            </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Quanto diesel você está{" "}
-              <span className="text-primary">perdendo</span> SEM saber?
+              Saiba onde suas máquinas estão{" "}
+              <span className="text-primary">agora mesmo</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Controle total da sua frota agrícola em tempo real. Economize até{" "}
-              <span className="font-bold text-accent">30% em combustível</span> e nunca mais perca uma manutenção.
+              GPS em tempo real + alertas de perímetro + controle de combustível. 
+              Economize até{" "}
+              <span className="font-bold text-accent">30% em diesel</span> e proteja sua frota contra uso não autorizado.
             </p>
 
             {/* Benefits List */}
-            <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-3">
               {[
-                "7 dias grátis",
-                "Sem cartão de crédito",
-                "Cancele quando quiser",
+                { icon: MapPin, text: "GPS em tempo real" },
+                { icon: Shield, text: "Alertas de perímetro" },
+                { icon: Zap, text: "7 dias grátis" },
+                { icon: Check, text: "Sem cartão" },
               ].map((benefit) => (
-                <div key={benefit} className="flex items-center gap-3">
+                <div key={benefit.text} className="flex items-center gap-2">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-primary" />
+                    <benefit.icon className="w-3.5 h-3.5 text-primary" />
                   </div>
-                  <span className="text-foreground font-medium">{benefit}</span>
+                  <span className="text-foreground font-medium text-sm">{benefit.text}</span>
                 </div>
               ))}
             </div>
@@ -94,13 +101,18 @@ export default function HeroSection() {
             </div>
 
             {/* Floating Stats Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg">
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
               <p className="text-sm text-muted-foreground">Economia Média</p>
               <p className="text-2xl font-bold text-primary">30%</p>
+              <p className="text-xs text-muted-foreground">em combustível</p>
             </div>
-            <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg">
+            <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
               <p className="text-sm text-muted-foreground">Máquinas</p>
               <p className="text-2xl font-bold text-accent">10.000+</p>
+              <p className="text-xs text-muted-foreground">monitoradas</p>
+            </div>
+            <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-green-500 text-white rounded-lg px-3 py-2 shadow-lg hidden lg:block">
+              <p className="text-xs font-bold">🛡️ Alerta de Perímetro</p>
             </div>
           </div>
         </div>

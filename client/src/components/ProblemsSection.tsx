@@ -1,6 +1,11 @@
-import { AlertCircle, Wrench, FileSpreadsheet, Calendar } from "lucide-react";
+import { AlertCircle, Wrench, FileSpreadsheet, Calendar, MapPinOff, Gauge } from "lucide-react";
 
 const problems = [
+  {
+    icon: MapPinOff,
+    title: "Cadê a máquina?",
+    description: "Não sabe onde suas máquinas estão?",
+  },
   {
     icon: AlertCircle,
     title: "Diesel sumindo?",
@@ -10,6 +15,11 @@ const problems = [
     icon: Wrench,
     title: "Trator parado?",
     description: "Quebrou na hora errada?",
+  },
+  {
+    icon: Gauge,
+    title: "Velocidade alta?",
+    description: "Máquina correndo demais no campo?",
   },
   {
     icon: FileSpreadsheet,
@@ -36,7 +46,7 @@ export default function ProblemsSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {problems.map((problem, index) => {
             const Icon = problem.icon;
             return (

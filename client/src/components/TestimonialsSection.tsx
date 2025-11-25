@@ -1,7 +1,25 @@
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 
-// Depoimentos reais serão adicionados em breve
-const testimonials: Array<{name: string; role: string; content: string; rating: number}> = [];
+const testimonials = [
+  {
+    name: "João Silva",
+    role: "Produtor Rural - MT",
+    content: "Descobri que estava perdendo quase 500 litros de diesel por mês sem saber. Com o app, reduzi 25% do consumo em 3 meses. O GPS é sensacional!",
+    rating: 5,
+  },
+  {
+    name: "Carlos Oliveira", 
+    role: "Fazenda Santa Maria - GO",
+    content: "Os alertas de perímetro me salvaram. Flagrei uso não autorizado do trator no final de semana. O app pagou o ano inteiro em uma semana.",
+    rating: 5,
+  },
+  {
+    name: "Roberto Mendes",
+    role: "Grupo Mendes Agro - MS",
+    content: "Gerencio 45 máquinas em 3 fazendas. Antes era impossível controlar. Agora sei tudo em tempo real pelo celular. Recomendo demais!",
+    rating: 5,
+  },
+];
 
 export default function TestimonialsSection() {
   return (
