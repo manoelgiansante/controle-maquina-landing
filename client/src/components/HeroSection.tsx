@@ -94,9 +94,9 @@ export default function HeroSection() {
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-border">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/-vF6aiTApWI"
+                src="https://player.vimeo.com/video/1140502256"
                 title="Controle de Máquina - Pare de perder diesel!"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
               />
             </div>
