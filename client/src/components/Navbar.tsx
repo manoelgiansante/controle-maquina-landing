@@ -76,7 +76,12 @@ export default function Navbar() {
           </div>
 
           {/* Mobile CTA */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={() => {
+              window.location.href = "https://app.controledemaquina.com.br/login";
+            }}>
+              Entrar
+            </Button>
             <Button size="sm" onClick={handleCTA}>
               Teste Grátis
             </Button>

@@ -87,7 +87,7 @@ const plans = [
       { text: "Prioridade em atualizações", included: true },
     ],
     popular: false,
-    cta: "Falar com Especialista",
+    cta: "Começar Teste Grátis",
   },
   {
     id: "service_provider",
@@ -109,7 +109,7 @@ const plans = [
       { text: "Até 20 usuários", included: true },
     ],
     popular: false,
-    cta: "Sou Prestador",
+    cta: "Começar Teste Grátis",
   },
 ];
 
@@ -117,10 +117,28 @@ export default function PricingSectionNew() {
   const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">("monthly");
 
   const handleCTA = (planId: string) => {
+    // Dispara eventos no Facebook Pixel para otimização de campanhas
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      // Evento de Lead
+      (window as any).fbq('track', 'Lead', {
+        content_name: `Plano ${planId}`,
+        content_category: 'Signup',
+        value: 0,
+        currency: 'BRL'
+      });
+
+      // Evento de InitiateCheckout com PIX para conversões
+      (window as any).fbq('track', 'InitiateCheckout', {
+        content_name: `Plano ${planId} - PIX`,
+        content_category: 'Subscription',
+        value: plans.find(p => p.id === planId)?.price || 0,
+        currency: 'BRL',
+        payment_method: 'PIX'
+      });
+    }
+
     if (planId === "free") {
       window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
-    } else if (planId === "enterprise" || planId === "service_provider") {
-      window.location.href = "https://wa.me/5517997497208?text=Olá! Quero saber mais sobre o plano " + planId;
     } else {
       window.location.href = "https://app.controledemaquina.com.br/login?mode=register&plan=" + planId;
     }
