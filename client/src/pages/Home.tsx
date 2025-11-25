@@ -4,7 +4,6 @@ import StatsSection from "@/components/StatsSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import PricingSectionNew from "@/components/PricingSectionNew";
 import FeaturesComparisonSection from "@/components/FeaturesComparisonSection";
 import FAQSection from "@/components/FAQSection";
@@ -22,7 +21,6 @@ export default function Home() {
       <FeaturesSection />
       <PricingSectionNew />
       <FeaturesComparisonSection />
-      <TestimonialsSection />
       <FAQSection />
       <CTASection />
       <WhatsAppButton />
