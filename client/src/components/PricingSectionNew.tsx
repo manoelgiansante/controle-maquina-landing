@@ -2,6 +2,46 @@ import { Button } from "@/components/ui/button";
 import { Check, X, Star, Zap } from "lucide-react";
 import { useState } from "react";
 
+// Stripe Price IDs configurados
+const STRIPE_PRICE_IDS = {
+  basic: {
+    monthly: "price_1SXMbuEa6xGSraYx5Obo48a1",
+    yearly: "price_1SXMcpEa6xGSraYxancVFGQI"
+  },
+  pro: {
+    monthly: "price_1SXMfYEa6xGSraYxrFkmQL1Z",
+    yearly: "price_1SXMgAEa6xGSraYxDjmTDYxN"
+  },
+  enterprise: {
+    monthly: "price_1SXMh7Ea6xGSraYx78UdwkF7",
+    yearly: "price_1SXMocEa6xGSraYxC2II2blE"
+  },
+  service_provider: {
+    monthly: "price_1SXMmhEa6xGSraYxBo7a0pEu",
+    yearly: "price_1SXMnKEa6xGSraYxcVEVfTxh"
+  }
+};
+
+// Stripe Payment Links (criar no painel Stripe)
+const STRIPE_PAYMENT_LINKS = {
+  basic: {
+    monthly: "https://buy.stripe.com/cN2cPDdR76JO1uU001",
+    yearly: "https://buy.stripe.com/7sY8zn3cta0028YdQS"
+  },
+  pro: {
+    monthly: "https://buy.stripe.com/bIY7vjdR70ls5L6dQT",
+    yearly: "https://buy.stripe.com/aEU9Dr3ct4BG6PaeUY"
+  },
+  enterprise: {
+    monthly: "https://buy.stripe.com/28o5nbcN30ls4H2289",
+    yearly: "https://buy.stripe.com/eVa02NcN35FKdds5ko"
+  },
+  service_provider: {
+    monthly: "https://buy.stripe.com/00gdTH6oF0ls8Xm6os",
+    yearly: "https://buy.stripe.com/8wMbLz6oFe8caZA8wB"
+  }
+};
+
 const plans = [
   {
     id: "free",
@@ -43,7 +83,7 @@ const plans = [
       { text: "GPS tracking", included: false },
     ],
     popular: false,
-    cta: "Começar Teste Grátis",
+    cta: "Assinar Agora",
   },
   {
     id: "pro",
@@ -65,7 +105,7 @@ const plans = [
       { text: "Múltiplas propriedades (até 5)", included: true },
     ],
     popular: true,
-    cta: "Começar Teste Grátis",
+    cta: "Assinar Agora",
   },
   {
     id: "enterprise",
@@ -87,7 +127,7 @@ const plans = [
       { text: "Prioridade em atualizações", included: true },
     ],
     popular: false,
-    cta: "Começar Teste Grátis",
+    cta: "Assinar Agora",
   },
   {
     id: "service_provider",
@@ -109,7 +149,7 @@ const plans = [
       { text: "Até 20 usuários", included: true },
     ],
     popular: false,
-    cta: "Começar Teste Grátis",
+    cta: "Assinar Agora",
   },
 ];
 
@@ -127,20 +167,43 @@ export default function PricingSectionNew() {
         currency: 'BRL'
       });
 
-      // Evento de InitiateCheckout com PIX para conversões
+      // Evento de InitiateCheckout
       (window as any).fbq('track', 'InitiateCheckout', {
-        content_name: `Plano ${planId} - PIX`,
+        content_name: `Plano ${planId}`,
         content_category: 'Subscription',
         value: plans.find(p => p.id === planId)?.price || 0,
-        currency: 'BRL',
-        payment_method: 'PIX'
+        currency: 'BRL'
       });
     }
 
+    // Google Analytics Event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'begin_checkout', {
+        currency: 'BRL',
+        value: plans.find(p => p.id === planId)?.price || 0,
+        items: [{
+          item_id: planId,
+          item_name: `Plano ${planId}`,
+          price: plans.find(p => p.id === planId)?.price || 0,
+          quantity: 1
+        }]
+      });
+    }
+
+    // Plano gratuito - vai direto para o app
     if (planId === "free") {
       window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
+      return;
+    }
+
+    // Planos pagos - abre Stripe Payment Link
+    const paymentLinks = STRIPE_PAYMENT_LINKS[planId as keyof typeof STRIPE_PAYMENT_LINKS];
+    if (paymentLinks) {
+      const link = billingPeriod === "monthly" ? paymentLinks.monthly : paymentLinks.yearly;
+      window.open(link, '_blank');
     } else {
-      window.location.href = "https://app.controledemaquina.com.br/login?mode=register&plan=" + planId;
+      // Fallback: redireciona para o app com o plano selecionado
+      window.location.href = `https://app.controledemaquina.com.br/login?mode=register&plan=${planId}&billing=${billingPeriod}`;
     }
   };
 
@@ -274,6 +337,13 @@ export default function PricingSectionNew() {
               </Button>
             </div>
           ))}
+        </div>
+
+        {/* Nota de segurança */}
+        <div className="text-center mt-8">
+          <p className="text-sm text-muted-foreground">
+            🔒 Pagamento seguro via Stripe. Cancele quando quiser.
+          </p>
         </div>
 
       </div>
