@@ -79,7 +79,7 @@ const features = [
     category: "Limites",
     items: [
       { name: "Máquinas", free: "3", basic: "10", pro: "50", enterprise: "Ilimitado" },
-      { name: "GPS incluído", free: "0", basic: "0", pro: "5", enterprise: "Ilimitado" },
+      { name: "GPS incluído", free: "0", basic: "0", pro: "1", enterprise: "3" },
       { name: "Propriedades", free: "1", basic: "1", pro: "5", enterprise: "Ilimitado" },
       { name: "Usuários", free: "1", basic: "2", pro: "10", enterprise: "Ilimitado" },
     ],

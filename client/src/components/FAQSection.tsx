@@ -19,12 +19,12 @@ const faqs = [
   {
     question: "Quantos GPS estão incluídos em cada plano?",
     answer:
-      "No Plano Pro você tem 5 rastreadores GPS incluídos. No Enterprise, GPS ilimitado! Se precisar de mais GPS no Pro, pode contratar adicional por R$49,90/mês por máquina.",
+      "No Plano Pro você tem 1 rastreador GPS incluso, no Enterprise 3 GPS inclusos, e no Prestador Pro 2 GPS inclusos. Se precisar de mais GPS, pode contratar adicional: Pro R$20/mês, Enterprise R$15/mês, Prestador R$18/mês por máquina.",
   },
   {
     question: "Como funciona o GPS Controle de Máquina?",
     answer:
-      "Oferecemos rastreadores GPS em modelo de comodato (R$49,90/mês por máquina) sem fidelidade e com apenas R$300 de caução reembolsável. No plano Pro, 5 GPS já estão incluídos! Você visualiza em tempo real no mapa, histórico de trajetos e alertas.",
+      "Oferecemos rastreadores GPS em modelo de comodato com R$300 de caução reembolsável. Cada plano já inclui GPS: Pro (1), Enterprise (3), Prestador (2). GPS extras variam de R$15 a R$20/mês por máquina conforme o plano. Visualize em tempo real no mapa, histórico de trajetos e alertas!",
   },
   {
     question: "O que são alertas de perímetro?",
