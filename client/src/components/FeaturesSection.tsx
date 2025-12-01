@@ -1,77 +1,77 @@
-import { Fuel, Bell, Mail, Droplet, Wrench, Building2, Smartphone, TrendingDown, FileText, MapPin, Shield, Gauge, FileUp } from "lucide-react";
+import { Fuel, Bell, Mail, Droplet, Wrench, Building2, Smartphone, TrendingDown, FileText, MapPin, Shield, Gauge, FileUp, MessageCircle, Users, ClipboardCheck, CircleDot, AlertTriangle, Zap, BarChart3, DollarSign } from "lucide-react";
 
 const features = [
   {
     icon: MapPin,
-    title: "GPS Controle de Máquina",
+    title: "GPS em Tempo Real",
     description:
-      "Visualize suas máquinas no mapa em tempo real. Crie áreas/talhões, importe arquivos KML e monitore toda a frota de qualquer lugar!",
+      "Visualize suas máquinas no mapa em tempo real. Histórico de trajetos, velocidade e ignição. Rastreadores em comodato sem fidelidade!",
   },
   {
     icon: Shield,
-    title: "Alertas de Perímetro",
+    title: "Geocercas e Alertas",
     description:
-      "Receba notificações push quando uma máquina sair da área permitida. Proteja sua frota e evite uso não autorizado!",
+      "Crie áreas permitidas no mapa. Receba alertas quando máquina sair do perímetro. Proteja sua frota contra uso não autorizado!",
   },
   {
-    icon: Gauge,
-    title: "Alertas de Velocidade",
+    icon: MessageCircle,
+    title: "Alertas via WhatsApp",
     description:
-      "Configure limites de velocidade por máquina. Alerta automático quando exceder o limite. Reduza desgaste e acidentes!",
+      "Receba notificações de manutenção, CNH e anomalias direto no WhatsApp. Configure múltiplos contatos e horários de silêncio!",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Detecção de Anomalias",
+    description:
+      "IA identifica consumo suspeito automaticamente. Detecte erros de lançamento, possível furto ou problemas mecânicos!",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Checklists de Máquinas",
+    description:
+      "Verificação diária antes de operar. Itens obrigatórios, fotos de evidência. Bloqueie máquina se checklist reprovado!",
+  },
+  {
+    icon: CircleDot,
+    title: "Gestão de Pneus",
+    description:
+      "Controle vida útil, rodízio e inspeções. Alertas de desgaste. Histórico completo de cada pneu. Reduza custos de manutenção!",
   },
   {
     icon: Fuel,
-    title: "Gestão Completa de Tanque",
+    title: "Tanque Fazenda Inteligente",
     description:
-      "Monitore seu tanque em tempo real com preço médio automático. Alertas quando o nível ficar baixo. Controle total do combustível!",
+      "Monitore nível em tempo real. Preço médio automático. Alertas de nível baixo. Múltiplos tanques por propriedade!",
   },
   {
     icon: Wrench,
-    title: "Custos por Item em Manutenções",
+    title: "Manutenção Completa",
     description:
-      "Registre cada item da manutenção separadamente: óleo, filtros, peças, mão de obra. Saiba exatamente quanto gastou em cada serviço!",
+      "Custos detalhados por item: peças, óleo, mão de obra. Alertas por horímetro e data. Vincule com empresas de manutenção!",
+  },
+  {
+    icon: Users,
+    title: "Login de Funcionários",
+    description:
+      "Funcionário acessa sem ver dados financeiros. Auditoria de ações. Controle quem fez o quê e quando!",
   },
   {
     icon: Bell,
     title: "Alertas Inteligentes",
     description:
-      "Alertas amarelos quando faltam 10% para revisão, vermelhos quando vence. Notificações por email e push no celular!",
+      "Alertas visuais: verde, amarelo, vermelho. Push no celular, e-mail e WhatsApp. Nunca perca uma manutenção!",
   },
   {
-    icon: Mail,
-    title: "Email Diário às 21h",
+    icon: BarChart3,
+    title: "Relatórios Avançados",
     description:
-      "Receba automaticamente um resumo completo todos os dias: status de máquinas, alertas, consumo e custos. Sem precisar abrir o app!",
-  },
-  {
-    icon: Droplet,
-    title: "Consumo por Máquina",
-    description:
-      "Veja consumo médio em L/h de cada máquina. Compare eficiência, identifique desperdícios e otimize sua frota!",
-  },
-  {
-    icon: Building2,
-    title: "Múltiplas Propriedades",
-    description:
-      "Gerencie várias fazendas com dados 100% isolados. Cada propriedade tem suas próprias máquinas, tanque e relatórios!",
+      "Relatórios customizados, agendados por e-mail. Exportação PDF/Excel. Custo por hectare (TCO). Dados para decidir melhor!",
   },
   {
     icon: Smartphone,
-    title: "Funciona Offline",
+    title: "Funciona 100% Offline",
     description:
-      "Registre abastecimentos e manutenções sem internet. Sincroniza automaticamente quando a conexão voltar. Web, iOS e Android!",
-  },
-  {
-    icon: FileUp,
-    title: "Importar Áreas KML",
-    description:
-      "Já tem suas áreas mapeadas? Importe arquivos KML e crie talhões automaticamente no mapa. Simples e rápido!",
-  },
-  {
-    icon: TrendingDown,
-    title: "Relatórios em PDF/Excel",
-    description:
-      "Exporte relatórios completos de manutenções, abastecimentos e custos. Filtre por período e máquina. Perfeito para contabilidade!",
+      "Registre tudo sem internet. Sincroniza automaticamente. Disponível para Web, iOS e Android. Use em qualquer lugar!",
   },
 ];
 

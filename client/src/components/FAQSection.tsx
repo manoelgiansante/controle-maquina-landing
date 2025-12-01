@@ -9,27 +9,62 @@ const faqs = [
   {
     question: "Funciona no iOS e Android?",
     answer:
-      "Sim! O Controle de Máquina está disponível para Web, iOS e Android com sincronização automática entre todos os dispositivos.",
+      "Sim! O Controle de Máquina está disponível para Web, iOS e Android com sincronização automática entre todos os dispositivos. Você recebe notificações Push diretamente no celular!",
   },
   {
     question: "Preciso de internet?",
     answer:
-      "Não! O app funciona offline e sincroniza automaticamente quando a conexão voltar. Você pode registrar abastecimentos e manutenções mesmo sem internet.",
+      "Não! O app funciona offline e sincroniza automaticamente quando a conexão voltar. Você pode registrar abastecimentos, manutenções e checklists mesmo sem internet.",
+  },
+  {
+    question: "Quantos GPS estão incluídos em cada plano?",
+    answer:
+      "No Plano Pro você tem 5 rastreadores GPS incluídos. No Enterprise, GPS ilimitado! Se precisar de mais GPS no Pro, pode contratar adicional por R$49,90/mês por máquina.",
   },
   {
     question: "Como funciona o GPS Controle de Máquina?",
     answer:
-      "No plano Pro, você visualiza suas máquinas no mapa em tempo real, cria áreas/talhões, configura alertas de perímetro (quando a máquina sai da área) e alertas de velocidade. Também pode importar arquivos KML se já tiver suas áreas mapeadas!",
+      "Oferecemos rastreadores GPS em modelo de comodato (R$49,90/mês por máquina) sem fidelidade e com apenas R$300 de caução reembolsável. No plano Pro, 5 GPS já estão incluídos! Você visualiza em tempo real no mapa, histórico de trajetos e alertas.",
   },
   {
     question: "O que são alertas de perímetro?",
     answer:
-      "Alertas de perímetro avisam você por notificação push quando uma máquina sai ou entra em uma área definida. Perfeito para evitar uso não autorizado e monitorar onde suas máquinas estão trabalhando!",
+      "Alertas de perímetro avisam você por Push, WhatsApp ou Email quando uma máquina sai ou entra em uma área definida. Perfeito para evitar uso não autorizado e monitorar onde suas máquinas estão trabalhando!",
+  },
+  {
+    question: "Quais tipos de notificação vocês enviam?",
+    answer:
+      "Você pode receber alertas por 3 canais: Push Notification direto no celular (iOS e Android), WhatsApp e Email. Configure quais alertas quer receber em cada canal e defina horários de silêncio!",
+  },
+  {
+    question: "O que é a detecção de anomalias?",
+    answer:
+      "O sistema usa inteligência artificial para detectar automaticamente consumos de combustível fora do padrão. Se uma máquina que normalmente consome 10L/h aparece com 25L/h, você recebe um alerta para investigar possível furto ou problema mecânico!",
+  },
+  {
+    question: "Como funcionam os alertas por WhatsApp?",
+    answer:
+      "No plano Pro, você pode configurar alertas para chegarem via WhatsApp além de email e push. Manutenção vencida, anomalia detectada, máquina saindo do perímetro - tudo direto no seu WhatsApp!",
+  },
+  {
+    question: "O que são checklists de máquinas?",
+    answer:
+      "Checklists permitem que operadores façam inspeções diárias padronizadas antes de ligar a máquina: nível de óleo, pressão dos pneus, condição do equipamento, etc. Tudo registrado com fotos e assinatura!",
+  },
+  {
+    question: "Como funciona a gestão de pneus?",
+    answer:
+      "Você cadastra cada pneu da máquina com modelo, medida, sulcagem e data de instalação. O sistema alerta quando está na hora de rodízio, calibragem ou substituição. Controle total do custo por km rodado!",
+  },
+  {
+    question: "O que é controle de CNH?",
+    answer:
+      "Você cadastra a CNH de cada operador com data de validade. O sistema alerta quando a CNH está vencendo e bloqueia o operador de ser vinculado a máquinas com CNH vencida. Evite multas e problemas!",
   },
   {
     question: "Quantas máquinas posso cadastrar?",
     answer:
-      "No Plano Básico você pode cadastrar até 10 máquinas. No Plano Pro até 50 máquinas. No Enterprise, o número é ILIMITADO!",
+      "No Plano Gratuito até 3 máquinas. No Básico até 10, no Pro até 50 e no Enterprise ILIMITADO!",
   },
   {
     question: "E se eu não gostar?",
@@ -39,7 +74,7 @@ const faqs = [
   {
     question: "Como funcionam os alertas de manutenção?",
     answer:
-      "Alertas amarelos quando faltam 10% para revisão, vermelhos quando vence. Você recebe notificações por email e push no celular. Além disso, recebe um email diário às 21h com resumo completo!",
+      "Alertas amarelos quando faltam 10% para revisão, vermelhos quando vence. Você recebe notificações por email, push e WhatsApp. Além disso, recebe um email diário às 21h com resumo completo!",
   },
   {
     question: "Posso importar áreas de arquivos KML?",
@@ -49,7 +84,7 @@ const faqs = [
   {
     question: "Posso registrar custos de manutenção?",
     answer:
-      "Sim! Você pode registrar cada item da manutenção separadamente (óleo, filtros, peças, mão de obra) com quantidade e preço. O sistema calcula o total automaticamente!",
+      "Sim! Você pode registrar cada item da manutenção separadamente (óleo, filtros, peças, mão de obra) com quantidade e preço. O sistema calcula o total automaticamente e mostra o TCO (custo total de propriedade) e custo por hectare!",
   },
   {
     question: "Como funciona o controle de tanque?",
@@ -59,7 +94,12 @@ const faqs = [
   {
     question: "Posso exportar relatórios?",
     answer:
-      "Sim! Você pode exportar relatórios de manutenções, abastecimentos e custos em PDF (todos os planos) ou Excel/CSV (planos pagos). Filtre por período e máquina!",
+      "Sim! Você pode exportar relatórios de manutenções, abastecimentos, custos, checklists e anomalias em PDF ou Excel/CSV. Crie relatórios customizados e agende envio automático por email!",
+  },
+  {
+    question: "Posso dar acesso para meus funcionários?",
+    answer:
+      "Sim! No plano Pro você pode criar login para até 10 funcionários com permissões limitadas. Eles podem registrar abastecimentos e manutenções, mas não veem relatórios financeiros. Todas as ações ficam registradas na auditoria!",
   },
 ];
 
