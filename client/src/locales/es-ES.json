@@ -1,0 +1,429 @@
+{
+  "navbar": {
+    "features": "Funciones",
+    "pricing": "Precios",
+    "enterApp": "Entrar App",
+    "enter": "Entrar",
+    "freeTrial": "Prueba Gratis"
+  },
+  "hero": {
+    "badge": "NUEVO: GPS Control de Maquinaria",
+    "year": "2025",
+    "title": "Control total de tu",
+    "titleHighlight": "flota agrícola",
+    "titleEnd": "en la palma de tu mano",
+    "description": "GPS en tiempo real, alertas inteligentes, control de combustible y mantenimientos. Todo en una app simple que funciona",
+    "descriptionHighlight": "offline",
+    "descriptionEnd": "en el campo.",
+    "benefits": {
+      "gps": "GPS en tiempo real",
+      "alerts": "Alertas inteligentes",
+      "offline": "Funciona offline",
+      "platforms": "iOS, Android y Web"
+    },
+    "ctaStart": "Comenzar Prueba Gratis",
+    "ctaFeatures": "Ver Funciones",
+    "stats": {
+      "machines": "Máquinas",
+      "monitored": "monitoreadas",
+      "producers": "Productores",
+      "trustUs": "confían en nosotros"
+    }
+  },
+  "stats": {
+    "machines": "+10.000",
+    "machinesLabel": "Máquinas monitoreadas",
+    "producers": "+500",
+    "producersLabel": "Productores rurales",
+    "savings": "20%",
+    "savingsLabel": "Ahorro en diésel",
+    "uptime": "99.9%",
+    "uptimeLabel": "Disponibilidad"
+  },
+  "problems": {
+    "title": "Problemas que resolvemos",
+    "subtitle": "¿Ya pasaste por esto?",
+    "problem1": {
+      "title": "Combustible desapareciendo",
+      "description": "Sin control de abastecimiento, es imposible saber si hay desvío de diésel o consumo excesivo."
+    },
+    "problem2": {
+      "title": "Mantenimiento sorpresa",
+      "description": "Averías inesperadas detienen la operación y generan pérdidas enormes en la cosecha."
+    },
+    "problem3": {
+      "title": "Sin saber dónde están las máquinas",
+      "description": "Operadores usando máquinas fuera del horario o en áreas no autorizadas."
+    },
+    "problem4": {
+      "title": "Planillas desorganizadas",
+      "description": "Información dispersa, difícil de encontrar e imposible de analizar."
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Simple de usar, poderoso para gestionar",
+    "step1": {
+      "title": "Registra tus máquinas",
+      "description": "Agrega tractores, cosechadoras, camiones en pocos minutos."
+    },
+    "step2": {
+      "title": "Registra abastecimientos",
+      "description": "Controla cada litro de combustible con foto y ubicación GPS."
+    },
+    "step3": {
+      "title": "Programa mantenimientos",
+      "description": "Recibe alertas antes de los mantenimientos preventivos."
+    },
+    "step4": {
+      "title": "Analiza resultados",
+      "description": "Ve dashboards e informes para tomar mejores decisiones."
+    }
+  },
+  "features": {
+    "title": "Funciones",
+    "subtitle": "Todo lo que necesitas para gestionar tu flota",
+    "fuel": {
+      "title": "Control de Combustible",
+      "description": "Registra abastecimientos con foto, odómetro y ubicación GPS. Detecta consumo anormal automáticamente."
+    },
+    "maintenance": {
+      "title": "Mantenimientos Preventivos",
+      "description": "Alertas automáticas basadas en horómetro o fecha. Nunca más pierdas una revisión."
+    },
+    "gps": {
+      "title": "GPS en Tiempo Real",
+      "description": "Ve dónde están tus máquinas, historial de trayectos y geocercas."
+    },
+    "offline": {
+      "title": "Funciona Offline",
+      "description": "Registra datos incluso sin internet. Sincroniza automáticamente cuando te conectes."
+    },
+    "reports": {
+      "title": "Informes Avanzados",
+      "description": "Exporta a Excel y PDF. Gráficos de consumo, costos y mantenimientos."
+    },
+    "alerts": {
+      "title": "Alertas Inteligentes",
+      "description": "Notificaciones push, WhatsApp y email para eventos importantes."
+    },
+    "tires": {
+      "title": "Gestión de Neumáticos",
+      "description": "Controla la vida útil, presión y rotación de los neumáticos de cada máquina."
+    },
+    "operators": {
+      "title": "Gestión de Operadores",
+      "description": "Controla licencias, asocia operadores a máquinas, login de empleados."
+    }
+  },
+  "pricing": {
+    "title": "Planes y Precios",
+    "subtitle": "Elige el mejor plan para tu operación",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "yearlyDiscount": "2 meses gratis",
+    "perMonth": "/mes",
+    "perYear": "/año",
+    "mostPopular": "Más Popular",
+    "new": "Nuevo",
+    "startFree": "Comenzar Gratis",
+    "subscribe": "Suscribirse Ahora",
+    "contact": "Hablar con Consultor",
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "description": "Para empezar y probar"
+      },
+      "basic": {
+        "name": "Básico",
+        "description": "Para pequeños productores"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Para medianos y grandes productores"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Para grandes operaciones"
+      },
+      "serviceProvider": {
+        "name": "Prestador Pro",
+        "description": "Para prestadores de servicio"
+      }
+    },
+    "features": {
+      "upTo3Machines": "Hasta 3 máquinas",
+      "upTo10Machines": "Hasta 10 máquinas",
+      "upTo50Machines": "Hasta 50 máquinas",
+      "unlimitedMachines": "Máquinas ILIMITADAS",
+      "fuelControl": "Control de abastecimiento",
+      "maintenanceControl": "Control de mantenimiento",
+      "tankControl": "Control de tanque de granja",
+      "maintenanceAlerts": "Alertas de mantenimiento",
+      "offlineMode": "Modo offline",
+      "dashboard": "Dashboard con gráficos",
+      "tireManagement": "Gestión de neumáticos",
+      "machineChecklists": "Checklists de máquinas",
+      "exportExcelPdf": "Exportación Excel/PDF",
+      "advancedReports": "Informes avanzados",
+      "emailSupport": "Soporte por email",
+      "operatorManagement": "Gestión de operadores",
+      "gpsTracking": "GPS y Rastreo",
+      "allFromPrevious": "Todo del plan anterior +",
+      "gpsRealtime1": "GPS en tiempo real (1 incluido)",
+      "gpsRealtime2": "GPS en tiempo real (2 incluidos)",
+      "gpsRealtime3": "GPS en tiempo real (3 incluidos)",
+      "geofencesAlerts": "Geocercas y alertas",
+      "pushNotifications": "Push Notifications iOS/Android",
+      "whatsappEmailAlerts": "Alertas WhatsApp y Email",
+      "aiAnomalyDetection": "Detección de anomalías (IA)",
+      "operatorCnhManagement": "Gestión de operadores y licencias",
+      "workOrders": "Órdenes de servicio",
+      "costPerHectare": "Costo por hectárea (TCO)",
+      "multipleProperties5": "Múltiples propiedades (hasta 5)",
+      "unlimitedProperties": "Propiedades ilimitadas",
+      "employeeLogin": "Login de empleados",
+      "auditLog": "Auditoría de acciones",
+      "unlimitedUsers": "Usuarios ilimitados",
+      "unlimitedNotifications": "Push/WhatsApp/Email ilimitados",
+      "iotIntegration": "Integración IoT completa",
+      "financialManagement": "Gestión financiera",
+      "fullApi": "API completa",
+      "customReports": "Informes personalizados",
+      "iotAlerts": "Alertas IoT (combustible, motor)",
+      "updatePriority": "Prioridad en actualizaciones",
+      "unlimitedClients": "Clientes ilimitados",
+      "multiTenant": "Multi-cliente (multi-tenant)",
+      "advancedWorkOrders": "Órdenes de servicio avanzadas",
+      "automatedBilling": "Facturación automatizada",
+      "contractManagement": "Gestión de contratos",
+      "clientReports": "Informes para clientes",
+      "clientPortal": "Portal del cliente (web)",
+      "upTo20Users": "Hasta 20 usuarios"
+    }
+  },
+  "comparison": {
+    "title": "Comparativo de Funciones",
+    "subtitle": "Mira qué incluye cada plan"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Resuelve tus dudas",
+    "q1": {
+      "question": "¿Funciona sin internet?",
+      "answer": "¡Sí! La app funciona 100% offline. Puedes registrar abastecimientos, mantenimientos y usar todas las funciones incluso sin señal. Cuando te conectes, los datos se sincronizan automáticamente."
+    },
+    "q2": {
+      "question": "¿Cómo funciona el GPS?",
+      "answer": "El GPS usa rastreadores dedicados que instalamos en la máquina. A diferencia del GPS del celular, funciona 24h incluso con la máquina apagada. El plan Pro incluye 1 rastreador, Enterprise incluye 3."
+    },
+    "q3": {
+      "question": "¿Puedo cancelar en cualquier momento?",
+      "answer": "¡Sí! No hay permanencia. Puedes cancelar la suscripción en cualquier momento desde la app. Si cancelas, sigues teniendo acceso hasta el fin del período pagado."
+    },
+    "q4": {
+      "question": "¿Cómo es el soporte?",
+      "answer": "Ofrecemos soporte por email para planes pagos. Respondemos en hasta 24h hábiles. Para Enterprise, tenemos soporte prioritario y contacto directo por WhatsApp."
+    },
+    "q5": {
+      "question": "¿Funciona en iPhone y Android?",
+      "answer": "¡Sí! Tenemos app nativa para iOS y Android, además de una versión web completa. Tus datos se sincronizan entre todos los dispositivos."
+    },
+    "q6": {
+      "question": "¿Cuánto tiempo tarda para empezar?",
+      "answer": "¡Menos de 5 minutos! Solo baja la app, crea tu cuenta y registra tu primera máquina. No necesitas capacitación."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para ahorrar?",
+    "subtitle": "Comienza hoy mismo gratis. Sin tarjeta de crédito.",
+    "button": "Comenzar Prueba Gratis",
+    "social": "Más de 500 productores ya confían en nosotros"
+  },
+  "footer": {
+    "description": "Control completo de tu flota agrícola.",
+    "privacy": "Privacidad",
+    "terms": "Términos de Uso",
+    "contact": "Contacto",
+    "copyright": "© 2025 Control de Maquinaria. Todos los derechos reservados."
+  },
+  "whatsapp": {
+    "tooltip": "Habla con nosotros",
+    "message": "¡Hola! Tengo interés en Control de Maquinaria y me gustaría aclarar algunas dudas."
+  },
+  "languageSelector": {
+    "title": "Idioma"
+  },
+  "ctaSection": {
+    "title": "Simplifica la gestión de tu flota hoy",
+    "subtitle": "GPS, alertas, combustible y mantenimientos en una sola app. Prueba gratis por 7 días, sin tarjeta.",
+    "button": "Comenzar Prueba Gratis de 7 Días",
+    "benefits": {
+      "free": "7 días gratis",
+      "noCard": "Sin tarjeta",
+      "cancel": "Cancela cuando quieras"
+    }
+  },
+  "footerSection": {
+    "product": "Producto",
+    "features": "Funciones",
+    "prices": "Precios",
+    "company": "Empresa",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "legal": "Legal",
+    "terms": "Términos de Uso",
+    "privacy": "Privacidad",
+    "copyright": "© 2025 Control de Maquinaria. Todos los derechos reservados.",
+    "description": "Gestión inteligente de máquinas agrícolas"
+  },
+  "featuresSection": {
+    "title": "Todo lo que necesitas en un solo lugar",
+    "subtitle": "Funciones pensadas para facilitar tu día a día en el campo",
+    "items": {
+      "gps": {
+        "title": "GPS en Tiempo Real",
+        "description": "Visualiza tus máquinas en el mapa en tiempo real. Historial de trayectos, velocidad e ignición. ¡Rastreadores en comodato sin permanencia!"
+      },
+      "geofence": {
+        "title": "Geocercas y Alertas",
+        "description": "Crea áreas permitidas en el mapa. Recibe alertas cuando la máquina salga del perímetro. ¡Protege tu flota contra uso no autorizado!"
+      },
+      "whatsapp": {
+        "title": "Alertas vía WhatsApp",
+        "description": "Recibe notificaciones de mantenimiento, licencias y anomalías directo en WhatsApp. ¡Configura múltiples contactos y horarios de silencio!"
+      },
+      "anomaly": {
+        "title": "Detección de Anomalías",
+        "description": "IA identifica consumo sospechoso automáticamente. ¡Detecta errores de registro, posible robo o problemas mecánicos!"
+      },
+      "checklist": {
+        "title": "Checklists de Máquinas",
+        "description": "Verificación diaria antes de operar. Ítems obligatorios, fotos de evidencia. ¡Bloquea máquina si el checklist es reprobado!"
+      },
+      "tires": {
+        "title": "Gestión de Neumáticos",
+        "description": "Controla vida útil, rotación e inspecciones. Alertas de desgaste. Historial completo de cada neumático. ¡Reduce costos de mantenimiento!"
+      },
+      "tank": {
+        "title": "Tanque Granja Inteligente",
+        "description": "Monitorea nivel en tiempo real. Precio promedio automático. Alertas de nivel bajo. ¡Múltiples tanques por propiedad!"
+      },
+      "maintenance": {
+        "title": "Mantenimiento Completo",
+        "description": "Costos detallados por ítem: repuestos, aceite, mano de obra. Alertas por horómetro y fecha. ¡Vincula con empresas de mantenimiento!"
+      },
+      "employees": {
+        "title": "Login de Empleados",
+        "description": "Empleado accede sin ver datos financieros. Auditoría de acciones. ¡Controla quién hizo qué y cuándo!"
+      },
+      "alerts": {
+        "title": "Alertas Inteligentes",
+        "description": "Alertas visuales: verde, amarillo, rojo. Push en el celular, email y WhatsApp. ¡Nunca pierdas un mantenimiento!"
+      },
+      "reports": {
+        "title": "Informes Avanzados",
+        "description": "Informes personalizados, programados por email. Exportación PDF/Excel. Costo por hectárea (TCO). ¡Datos para decidir mejor!"
+      },
+      "offline": {
+        "title": "Funciona 100% Offline",
+        "description": "Registra todo sin internet. Sincroniza automáticamente. Disponible para Web, iOS y Android. ¡Usa en cualquier lugar!"
+      }
+    }
+  },
+  "faqSection": {
+    "items": {
+      "q1": {
+        "question": "¿Funciona en iOS y Android?",
+        "answer": "¡Sí! Control de Maquinaria está disponible para Web, iOS y Android con sincronización automática entre todos los dispositivos. ¡Recibes notificaciones Push directamente en el celular!"
+      },
+      "q2": {
+        "question": "¿Necesito internet?",
+        "answer": "¡No! La app funciona offline y sincroniza automáticamente cuando la conexión vuelva. Puedes registrar abastecimientos, mantenimientos y checklists incluso sin internet."
+      },
+      "q3": {
+        "question": "¿Cuántos GPS están incluidos en cada plan?",
+        "answer": "En el Plan Pro tienes 1 rastreador GPS incluido, en Enterprise 3 GPS incluidos, y en Prestador Pro 2 GPS incluidos. Si necesitas más GPS, puedes contratar adicional: Pro $4/mes, Enterprise $3/mes, Prestador $3.50/mes por máquina."
+      },
+      "q4": {
+        "question": "¿Cómo funciona el GPS Control de Maquinaria?",
+        "answer": "Ofrecemos rastreadores GPS en modelo de comodato con $60 de depósito reembolsable. Cada plan ya incluye GPS: Pro (1), Enterprise (3), Prestador (2). GPS extras varían de $3 a $4/mes por máquina según el plan. ¡Visualiza en tiempo real en el mapa, historial de trayectos y alertas!"
+      },
+      "q5": {
+        "question": "¿Qué son las alertas de perímetro?",
+        "answer": "Las alertas de perímetro te avisan por Push, WhatsApp o Email cuando una máquina sale o entra en un área definida. ¡Perfecto para evitar uso no autorizado y monitorear dónde están trabajando tus máquinas!"
+      },
+      "q6": {
+        "question": "¿Qué tipos de notificación envían?",
+        "answer": "Puedes recibir alertas por 3 canales: Push Notification directo en el celular (iOS y Android), WhatsApp y Email. ¡Configura qué alertas quieres recibir en cada canal y define horarios de silencio!"
+      },
+      "q7": {
+        "question": "¿Qué es la detección de anomalías?",
+        "answer": "El sistema usa inteligencia artificial para detectar automáticamente consumos de combustible fuera del patrón. Si una máquina que normalmente consume 10L/h aparece con 25L/h, ¡recibes una alerta para investigar posible robo o problema mecánico!"
+      },
+      "q8": {
+        "question": "¿Cómo funcionan las alertas por WhatsApp?",
+        "answer": "En el plan Pro, puedes configurar alertas para que lleguen vía WhatsApp además de email y push. Mantenimiento vencido, anomalía detectada, máquina saliendo del perímetro - ¡todo directo en tu WhatsApp!"
+      },
+      "q9": {
+        "question": "¿Cuántas máquinas puedo registrar?",
+        "answer": "En el Plan Gratuito hasta 3 máquinas. En Básico hasta 10, en Pro hasta 50 y en Enterprise ¡ILIMITADO!"
+      },
+      "q10": {
+        "question": "¿Y si no me gusta?",
+        "answer": "Puedes cancelar en 1 clic durante los 7 días gratis, sin burocracia y sin necesidad de hablar con nadie. No pedimos tarjeta de crédito en la prueba."
+      }
+    }
+  },
+  "pricingSection": {
+    "title": "Planes que caben en tu bolsillo",
+    "subtitle": "Elige el plan ideal para el tamaño de tu operación. Sin sorpresas, sin tarifas ocultas.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "yearlySavings": "Ahorra 17%",
+    "currency": "$",
+    "perMonth": "mes",
+    "perYear": "año",
+    "savingsText": "Ahorra ${{amount}} por año",
+    "securityNote": "🔒 Pago seguro vía Stripe. Cancela cuando quieras.",
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "price": "0",
+        "priceAnnual": "0",
+        "description": "Para empezar y probar",
+        "cta": "Comenzar Gratis"
+      },
+      "basic": {
+        "name": "Básico",
+        "price": "15.90",
+        "priceAnnual": "159",
+        "description": "Para pequeños productores",
+        "cta": "Suscribirse Ahora"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "49.90",
+        "priceAnnual": "499",
+        "description": "Para medianos y grandes productores",
+        "cta": "Suscribirse Ahora",
+        "badge": "Más Popular"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "119.90",
+        "priceAnnual": "1199",
+        "description": "Para grandes operaciones",
+        "cta": "Suscribirse Ahora"
+      },
+      "serviceProvider": {
+        "name": "Prestador Pro",
+        "price": "79.90",
+        "priceAnnual": "799",
+        "description": "Para prestadores de servicio",
+        "cta": "Suscribirse Ahora",
+        "badge": "Nuevo"
+      }
+    }
+  }
+}

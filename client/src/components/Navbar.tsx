@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -57,33 +60,35 @@ export default function Navbar() {
               href="#funcionalidades"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              Funcionalidades
+              {t('navbar.features')}
             </a>
             <a
               href="#precos"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              Preços
+              {t('navbar.pricing')}
             </a>
+            <LanguageSelector />
             <Button variant="outline" size="sm" onClick={() => {
               window.location.href = "https://app.controledemaquina.com.br/login";
             }}>
-              Entrar App
+              {t('navbar.enterApp')}
             </Button>
             <Button size="sm" onClick={handleCTA}>
-              Teste Grátis
+              {t('navbar.freeTrial')}
             </Button>
           </div>
 
           {/* Mobile CTA */}
           <div className="md:hidden flex items-center gap-2">
+            <LanguageSelector />
             <Button variant="outline" size="sm" onClick={() => {
               window.location.href = "https://app.controledemaquina.com.br/login";
             }}>
-              Entrar
+              {t('navbar.enter')}
             </Button>
             <Button size="sm" onClick={handleCTA}>
-              Teste Grátis
+              {t('navbar.freeTrial')}
             </Button>
           </div>
         </div>
