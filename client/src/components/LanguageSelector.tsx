@@ -26,9 +26,9 @@ export default function LanguageSelector() {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="gap-2">
+        <Button variant="outline" size="sm" className="gap-1.5 px-2.5">
+          <span className="text-base">{currentLang.flag}</span>
           <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline">{currentLang.flag}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
