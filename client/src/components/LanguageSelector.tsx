@@ -22,6 +22,8 @@ export default function LanguageSelector() {
     console.log('Changing language to:', langCode);
     changeLanguage(langCode);
     setOpen(false);
+    // Forçar atualização da página após mudança de idioma
+    window.location.reload();
   };
 
   return (
@@ -32,11 +34,15 @@ export default function LanguageSelector() {
           <Globe className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="z-50">
         {SUPPORTED_LANGUAGES.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onSelect={() => handleLanguageChange(lang.code)}
+            onClick={() => handleLanguageChange(lang.code)}
+            onSelect={(e) => {
+              e.preventDefault();
+              handleLanguageChange(lang.code);
+            }}
             className={`cursor-pointer ${i18n.language === lang.code ? "bg-accent" : ""}`}
           >
             <span className="mr-2">{lang.flag}</span>
