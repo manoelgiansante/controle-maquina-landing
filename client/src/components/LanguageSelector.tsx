@@ -19,6 +19,7 @@ export default function LanguageSelector() {
   ) || SUPPORTED_LANGUAGES[0];
 
   const handleLanguageChange = (langCode: string) => {
+    console.log('Changing language to:', langCode);
     changeLanguage(langCode);
     setOpen(false);
   };
@@ -35,8 +36,8 @@ export default function LanguageSelector() {
         {SUPPORTED_LANGUAGES.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => handleLanguageChange(lang.code)}
-            className={i18n.language === lang.code ? "bg-accent" : ""}
+            onSelect={() => handleLanguageChange(lang.code)}
+            className={`cursor-pointer ${i18n.language === lang.code ? "bg-accent" : ""}`}
           >
             <span className="mr-2">{lang.flag}</span>
             {lang.name}
