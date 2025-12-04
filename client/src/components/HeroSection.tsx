@@ -3,7 +3,14 @@ import { Check, MapPin, Shield, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Vídeo diferente para cada idioma
+  const isSpanish = i18n.language?.startsWith('es');
+  const videoId = isSpanish ? 'WPSSo9Qc3gY' : 'ooa6azIu1Qk';
+  const videoTitle = isSpanish 
+    ? 'Control de Maquinaria - ¡Deja de perder diésel!' 
+    : 'Controle de Máquina - Pare de perder diesel!';
 
   const handleCTA = () => {
     // Dispara eventos no Facebook Pixel para otimização de campanhas
@@ -99,8 +106,8 @@ export default function HeroSection() {
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black border border-border">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/ooa6azIu1Qk"
-                title="Controle de Máquina - Pare de perder diesel!"
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={videoTitle}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
