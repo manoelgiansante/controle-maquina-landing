@@ -1,54 +1,37 @@
 import { Fuel, MapPin, Users, Smartphone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const stats = [
-  {
-    icon: MapPin,
-    value: "10.000+",
-    label: "Máquinas Monitoradas",
-    description: "em todo o Brasil",
-  },
-  {
-    icon: Fuel,
-    value: "2M+",
-    label: "Litros Controlados",
-    description: "por mês",
-  },
-  {
-    icon: Smartphone,
-    value: "3",
-    label: "Plataformas",
-    description: "iOS, Android e Web",
-  },
-  {
-    icon: Users,
-    value: "500+",
-    label: "Produtores",
-    description: "confiam em nós",
-  },
+const STAT_KEYS = [
+  { key: 'machines', icon: MapPin },
+  { key: 'fuel', icon: Fuel },
+  { key: 'platforms', icon: Smartphone },
+  { key: 'producers', icon: Users },
 ];
 
 export default function StatsSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-12 bg-primary">
       <div className="container">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, index) => {
+          {STAT_KEYS.map((stat) => {
             const Icon = stat.icon;
             return (
-              <div key={index} className="text-center">
+              <div key={stat.key} className="text-center">
                 <div className="flex justify-center mb-3">
                   <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
                 <p className="text-3xl md:text-4xl font-bold text-white mb-1">
-                  {stat.value}
+                  {t(`statsSection.items.${stat.key}.value`)}
                 </p>
                 <p className="text-sm font-semibold text-white/90">
-                  {stat.label}
+                  {t(`statsSection.items.${stat.key}.label`)}
                 </p>
                 <p className="text-xs text-white/70">
-                  {stat.description}
+                  {t(`statsSection.items.${stat.key}.description`)}
                 </p>
               </div>
             );

@@ -1,4 +1,7 @@
 {
+  "app": {
+    "name": "Control de Maquinaria"
+  },
   "navbar": {
     "features": "Funciones",
     "pricing": "Precios",
@@ -40,6 +43,31 @@
     "uptime": "99.9%",
     "uptimeLabel": "Disponibilidad"
   },
+  "statsSection": {
+    "title": "Números que Impresionan",
+    "items": {
+      "machines": {
+        "value": "10.000+",
+        "label": "Máquinas Monitoreadas",
+        "description": "en toda América Latina"
+      },
+      "fuel": {
+        "value": "2M+",
+        "label": "Litros Controlados",
+        "description": "por mes"
+      },
+      "platforms": {
+        "value": "3",
+        "label": "Plataformas",
+        "description": "iOS, Android y Web"
+      },
+      "producers": {
+        "value": "500+",
+        "label": "Productores",
+        "description": "confían en nosotros"
+      }
+    }
+  },
   "problems": {
     "title": "Problemas que resolvemos",
     "subtitle": "¿Ya pasaste por esto?",
@@ -60,6 +88,40 @@
       "description": "Información dispersa, difícil de encontrar e imposible de analizar."
     }
   },
+  "problemsSection": {
+    "title": "¿Reconoces estos problemas?",
+    "subtitle": "Estos son los desafíos que todo productor enfrenta día a día",
+    "items": {
+      "location": {
+        "title": "¿Dónde está la máquina?",
+        "description": "¿No sabes dónde están tus máquinas?"
+      },
+      "fuel": {
+        "title": "¿Diésel desapareciendo?",
+        "description": "¿No sabes dónde fue el combustible?"
+      },
+      "breakdown": {
+        "title": "¿Tractor parado?",
+        "description": "¿Se averió en el peor momento?"
+      },
+      "speed": {
+        "title": "¿Velocidad alta?",
+        "description": "¿Máquina corriendo demasiado en el campo?"
+      },
+      "control": {
+        "title": "¿Sin control?",
+        "description": "¿Planilla desordenada y desactualizada?"
+      },
+      "maintenance": {
+        "title": "¿Olvidaste la revisión?",
+        "description": "¿Mantenimiento vencido otra vez?"
+      }
+    },
+    "solution": {
+      "title": "✅ Control de Maquinaria resuelve todo esto",
+      "subtitle": "Gestión completa en una sola aplicación"
+    }
+  },
   "howItWorks": {
     "title": "Cómo funciona",
     "subtitle": "Simple de usar, poderoso para gestionar",
@@ -78,6 +140,28 @@
     "step4": {
       "title": "Analiza resultados",
       "description": "Ve dashboards e informes para tomar mejores decisiones."
+    }
+  },
+  "howItWorksSection": {
+    "title": "Cómo Funciona en 4 Pasos Simples",
+    "subtitle": "Comienza a monitorear tu flota en minutos. Así de simple.",
+    "steps": {
+      "register": {
+        "title": "1. Registra tus Máquinas",
+        "description": "Agrega tus máquinas con nombre, tipo y horómetro actual. Toma solo 2 minutos."
+      },
+      "areas": {
+        "title": "2. Crea tus Áreas",
+        "description": "Dibuja los perímetros en el mapa o importa archivos KML. Configura alertas de salida."
+      },
+      "operations": {
+        "title": "3. Registra Operaciones",
+        "description": "Abastecimientos y mantenimientos en 30 segundos. ¡Funciona offline!"
+      },
+      "control": {
+        "title": "4. Ahorra y Controla",
+        "description": "Ve todo en tiempo real: ubicación, consumo, alertas e informes."
+      }
     }
   },
   "features": {
@@ -254,6 +338,29 @@
   "languageSelector": {
     "title": "Idioma"
   },
+  "testimonialsSection": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Productores reales, resultados reales",
+    "emptyTitle": "📈 Próximamente: testimonios de productores reales",
+    "emptySubtitle": "¿Eres nuestro cliente? ¡Contáctanos para compartir tu experiencia!",
+    "items": {
+      "testimonial1": {
+        "name": "Juan García",
+        "role": "Productor Rural - Argentina",
+        "content": "Descubrí que estaba perdiendo casi 500 litros de diésel por mes sin saberlo. Con la app, reduje 25% del consumo en 3 meses. ¡El GPS es sensacional!"
+      },
+      "testimonial2": {
+        "name": "Carlos Rodríguez",
+        "role": "Estancia Santa María - Uruguay",
+        "content": "Las alertas de perímetro me salvaron. Detecté uso no autorizado del tractor el fin de semana. La app se pagó todo el año en una semana."
+      },
+      "testimonial3": {
+        "name": "Roberto Fernández",
+        "role": "Grupo Fernández Agro - Paraguay",
+        "content": "Gestiono 45 máquinas en 3 campos. Antes era imposible controlar. Ahora sé todo en tiempo real desde el celular. ¡Lo recomiendo mucho!"
+      }
+    }
+  },
   "ctaSection": {
     "title": "Simplifica la gestión de tu flota hoy",
     "subtitle": "GPS, alertas, combustible y mantenimientos en una sola app. Prueba gratis por 7 días, sin tarjeta.",
@@ -373,6 +480,100 @@
         "question": "¿Y si no me gusta?",
         "answer": "Puedes cancelar en 1 clic durante los 7 días gratis, sin burocracia y sin necesidad de hablar con nadie. No pedimos tarjeta de crédito en la prueba."
       }
+    }
+  },
+  "comparisonSection": {
+    "badge": "Comparativo Completo",
+    "title": "Elige el plan ideal para ti",
+    "subtitle": "Compara todas las funciones y encuentra el plan perfecto para tu operación",
+    "allFeatures": "Funciones",
+    "allFeaturesSubtitle": "Todo lo que necesitas",
+    "ctaButton": "Comenzar Ahora",
+    "ctaEnterprise": "Hablar con Ventas",
+    "helpText": "¿Necesitas ayuda para elegir?",
+    "helpLink": "Habla con nuestro equipo por WhatsApp",
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "price": "$0",
+        "period": "/mes",
+        "description": "Para empezar"
+      },
+      "basic": {
+        "name": "Básico",
+        "price": "$15.90",
+        "period": "/mes",
+        "description": "Pequeños productores"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$49.90",
+        "period": "/mes",
+        "description": "Medianos productores",
+        "badge": "Más Popular"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "$119.90",
+        "period": "/mes",
+        "description": "Grandes operaciones",
+        "badge": "Completo"
+      }
+    },
+    "categories": {
+      "basicControl": "Control Básico",
+      "fleetManagement": "Gestión de Flota",
+      "gpsMonitoring": "GPS y Monitoreo",
+      "notifications": "Notificaciones",
+      "advancedManagement": "Gestión Avanzada",
+      "collaborators": "Colaboradores",
+      "enterprise": "Enterprise",
+      "limits": "Límites"
+    },
+    "features": {
+      "fuelControl": "Control de abastecimiento",
+      "maintenanceControl": "Control de mantenimiento",
+      "tankControl": "Control de tanque granja",
+      "maintenanceAlerts": "Alertas de mantenimiento",
+      "basicReports": "Informes básicos",
+      "offlineMode": "Modo offline",
+      "tireManagement": "Gestión de neumáticos",
+      "machineChecklists": "Checklists de máquinas",
+      "dashboardCharts": "Dashboard con gráficos",
+      "exportExcelPdf": "Exportación Excel/PDF",
+      "advancedReports": "Informes avanzados",
+      "gpsRealtime": "Rastreo GPS en tiempo real",
+      "routeHistory": "Historial de trayectos",
+      "geofences": "Geocercas (áreas permitidas)",
+      "speedAlerts": "Alertas de velocidad",
+      "iotAlerts": "Alertas IoT (combustible, motor)",
+      "importKml": "Importar áreas KML",
+      "pushNotifications": "Notificaciones Push (celular)",
+      "emailAlerts": "Alertas por Email",
+      "whatsappAlerts": "Alertas vía WhatsApp",
+      "scheduledReports": "Informes programados por email",
+      "operatorManagement": "Gestión de operadores",
+      "cnhControl": "Control de licencias",
+      "workOrders": "Órdenes de servicio",
+      "anomalyDetection": "Detección de anomalías (IA)",
+      "areaManagement": "Gestión de áreas/lotes",
+      "costPerHectare": "Costo por hectárea (TCO)",
+      "multipleProperties": "Múltiples propiedades",
+      "employeeLogin": "Login de empleados",
+      "auditLog": "Auditoría de acciones",
+      "limitedPermissions": "Permisos limitados",
+      "unlimitedMachines": "Máquinas ilimitadas",
+      "unlimitedProperties": "Propiedades ilimitadas",
+      "unlimitedUsers": "Usuarios ilimitados",
+      "iotIntegration": "Integración IoT completa",
+      "financialManagement": "Gestión financiera",
+      "fullApi": "API completa",
+      "customReports": "Informes personalizados",
+      "machines": "Máquinas",
+      "gpsIncluded": "GPS incluido",
+      "properties": "Propiedades",
+      "users": "Usuarios",
+      "unlimited": "Ilimitado"
     }
   },
   "pricingSection": {
