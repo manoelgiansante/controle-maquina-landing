@@ -62,35 +62,41 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {/* App Store Links */}
-            <div className="flex items-center gap-2 border-r border-border pr-6">
+          <div className="hidden md:flex items-center gap-4">
+            {/* App Store Download Buttons */}
+            <div className="flex items-center gap-2">
               <a
                 href={APP_STORE_LINKS.ios}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors"
-                title="Download iOS"
+                className="inline-flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
               >
-                <Apple className="w-4 h-4" />
-                <span className="hidden lg:inline">iOS</span>
+                <Apple className="w-5 h-5" />
+                <div className="text-left leading-tight">
+                  <div className="text-[8px] opacity-70">Download</div>
+                  <div className="text-xs font-semibold">App Store</div>
+                </div>
               </a>
               <a
                 href={APP_STORE_LINKS.android}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${APP_STORE_LINKS.android === "#" ? "opacity-50 cursor-not-allowed" : "hover:text-primary"}`}
-                title={APP_STORE_LINKS.android === "#" ? "Em breve" : "Download Android"}
+                className={`inline-flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg transition-colors ${APP_STORE_LINKS.android === "#" ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-800"}`}
                 onClick={(e) => {
                   if (APP_STORE_LINKS.android === "#") {
                     e.preventDefault();
                   }
                 }}
               >
-                <Play className="w-4 h-4 fill-current" />
-                <span className="hidden lg:inline">Android</span>
+                <Play className="w-5 h-5 fill-current" />
+                <div className="text-left leading-tight">
+                  <div className="text-[8px] opacity-70">{APP_STORE_LINKS.android === "#" ? "Em breve" : "Download"}</div>
+                  <div className="text-xs font-semibold">Google Play</div>
+                </div>
               </a>
             </div>
+
+            <div className="h-6 w-px bg-border" />
 
             <a
               href="#funcionalidades"
