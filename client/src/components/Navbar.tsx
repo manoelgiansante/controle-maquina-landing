@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
+import { Apple, Play } from "lucide-react";
+
+// Links das lojas de aplicativos
+const APP_STORE_LINKS = {
+  ios: "https://apps.apple.com/br/app/controle-de-maquina/id6754709677",
+  android: "#", // TODO: Adicionar link da Play Store quando disponível
+};
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -55,7 +62,36 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
+            {/* App Store Links */}
+            <div className="flex items-center gap-2 border-r border-border pr-6">
+              <a
+                href={APP_STORE_LINKS.ios}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm font-medium hover:text-primary transition-colors"
+                title="Download iOS"
+              >
+                <Apple className="w-4 h-4" />
+                <span className="hidden lg:inline">iOS</span>
+              </a>
+              <a
+                href={APP_STORE_LINKS.android}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${APP_STORE_LINKS.android === "#" ? "opacity-50 cursor-not-allowed" : "hover:text-primary"}`}
+                title={APP_STORE_LINKS.android === "#" ? "Em breve" : "Download Android"}
+                onClick={(e) => {
+                  if (APP_STORE_LINKS.android === "#") {
+                    e.preventDefault();
+                  }
+                }}
+              >
+                <Play className="w-4 h-4 fill-current" />
+                <span className="hidden lg:inline">Android</span>
+              </a>
+            </div>
+
             <a
               href="#funcionalidades"
               className="text-sm font-medium hover:text-primary transition-colors"
