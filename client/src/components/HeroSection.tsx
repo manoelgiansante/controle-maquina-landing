@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Check, MapPin, Shield, Zap } from "lucide-react";
+import { Check, MapPin, Shield, Zap, Apple, Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
+
+// Links das lojas de aplicativos
+const APP_STORE_LINKS = {
+  ios: "https://apps.apple.com/br/app/controle-de-maquina/id6754709677",
+  android: "#", // TODO: Adicionar link da Play Store quando disponível
+};
 
 export default function HeroSection() {
   const { t, i18n } = useTranslation();
@@ -98,6 +104,39 @@ export default function HeroSection() {
               >
                 {t('hero.ctaFeatures')}
               </Button>
+            </div>
+
+            {/* App Store Download Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <a
+                href={APP_STORE_LINKS.ios}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition-colors"
+              >
+                <Apple className="w-7 h-7" />
+                <div className="text-left">
+                  <div className="text-[10px] opacity-80 leading-tight">{t('hero.downloadOn', { defaultValue: 'Baixar na' })}</div>
+                  <div className="text-base font-semibold leading-tight">App Store</div>
+                </div>
+              </a>
+              <a
+                href={APP_STORE_LINKS.android}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition-colors opacity-60 cursor-not-allowed"
+                onClick={(e) => {
+                  if (APP_STORE_LINKS.android === "#") {
+                    e.preventDefault();
+                  }
+                }}
+              >
+                <Play className="w-7 h-7 fill-current" />
+                <div className="text-left">
+                  <div className="text-[10px] opacity-80 leading-tight">{t('hero.availableOn', { defaultValue: 'Em breve na' })}</div>
+                  <div className="text-base font-semibold leading-tight">Google Play</div>
+                </div>
+              </a>
             </div>
           </div>
 

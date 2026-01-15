@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "NUEVO: GPS Control de Maquinaria",
-    "year": "2025",
+    "year": "2026",
     "title": "Control total de tu",
     "titleHighlight": "flota agrícola",
     "titleEnd": "en la palma de tu mano",
@@ -26,6 +26,8 @@
     },
     "ctaStart": "Comenzar Prueba Gratis",
     "ctaFeatures": "Ver Funciones",
+    "downloadOn": "Descargar en",
+    "availableOn": "Próximamente en",
     "stats": {
       "machines": "Máquinas",
       "monitored": "monitoreadas",
@@ -245,6 +247,8 @@
       "tankControl": "Control de tanque de granja",
       "maintenanceAlerts": "Alertas de mantenimiento",
       "offlineMode": "Modo offline",
+      "whatsappAlerts": "Alertas WhatsApp",
+      "basicReports": "Informes básicos",
       "dashboard": "Dashboard con gráficos",
       "tireManagement": "Gestión de neumáticos",
       "machineChecklists": "Checklists de máquinas",
@@ -329,7 +333,7 @@
     "privacy": "Privacidad",
     "terms": "Términos de Uso",
     "contact": "Contacto",
-    "copyright": "© 2025 Control de Maquinaria. Todos los derechos reservados."
+    "copyright": "© 2026 Control de Maquinaria. Todos los derechos reservados."
   },
   "whatsapp": {
     "tooltip": "Habla con nosotros",
@@ -365,6 +369,8 @@
     "title": "Simplifica la gestión de tu flota hoy",
     "subtitle": "GPS, alertas, combustible y mantenimientos en una sola app. Prueba gratis por 7 días, sin tarjeta.",
     "button": "Comenzar Prueba Gratis de 7 Días",
+    "downloadOn": "Descargar en",
+    "accessWeb": "Acceder vía",
     "benefits": {
       "free": "7 días gratis",
       "noCard": "Sin tarjeta",
@@ -381,7 +387,8 @@
     "legal": "Legal",
     "terms": "Términos de Uso",
     "privacy": "Privacidad",
-    "copyright": "© 2025 Control de Maquinaria. Todos los derechos reservados.",
+    "downloadApp": "Descarga la App",
+    "copyright": "© 2026 Control de Maquinaria. Todos los derechos reservados.",
     "description": "Gestión inteligente de máquinas agrícolas"
   },
   "featuresSection": {
@@ -403,6 +410,14 @@
       "anomaly": {
         "title": "Detección de Anomalías",
         "description": "IA identifica consumo sospechoso automáticamente. ¡Detecta errores de registro, posible robo o problemas mecánicos!"
+      },
+      "chatbot": {
+        "title": "Chatbot con IA",
+        "description": "Asistente virtual inteligente 24/7. Resuelve dudas sobre el sistema en cualquier momento. ¡Entrenado específicamente en Control de Maquinaria!"
+      },
+      "activityCost": {
+        "title": "Costo por Actividad Agrícola",
+        "description": "Sabe cuánto gastaste en cada operación: Siembra, Cosecha, Pulverización. ¡Apropia costos de combustible y mantenimiento por actividad!"
       },
       "checklist": {
         "title": "Checklists de Máquinas",
@@ -479,6 +494,22 @@
       "q10": {
         "question": "¿Y si no me gusta?",
         "answer": "Puedes cancelar en 1 clic durante los 7 días gratis, sin burocracia y sin necesidad de hablar con nadie. No pedimos tarjeta de crédito en la prueba."
+      },
+      "q11": {
+        "question": "¿Puedo cambiar de plan después?",
+        "answer": "¡Sí! Puedes hacer upgrade o downgrade en cualquier momento. Al hacer upgrade, la diferencia se cobra proporcional. Al hacer downgrade, el crédito queda para los próximos meses."
+      },
+      "q12": {
+        "question": "¿El GPS tiene permanencia?",
+        "answer": "¡No! El GPS se proporciona en comodato (prestado) mediante depósito de $60 por dispositivo. Si cancelas, devuelves el GPS y recibes el depósito de vuelta. ¡Sin sorpresas, sin letra pequeña!"
+      },
+      "q13": {
+        "question": "¿Tienen Chatbot?",
+        "answer": "¡Sí! Tenemos un asistente virtual con IA disponible 24/7 directo en la app. Fue entrenado específicamente en Control de Maquinaria y puede resolver todas tus dudas sobre el sistema."
+      },
+      "q14": {
+        "question": "¿Qué es Costo por Actividad?",
+        "answer": "Es la función que permite apropiar costos de combustible y mantenimiento por actividad agrícola (Siembra, Cosecha, Pulverización). ¡Así sabes exactamente cuánto gastaste en cada operación y puedes calcular la rentabilidad!"
       }
     }
   },
@@ -558,6 +589,8 @@
       "anomalyDetection": "Detección de anomalías (IA)",
       "areaManagement": "Gestión de áreas/lotes",
       "costPerHectare": "Costo por hectárea (TCO)",
+      "activityCost": "Costo por actividad agrícola",
+      "chatbotAI": "Chatbot con IA",
       "multipleProperties": "Múltiples propiedades",
       "employeeLogin": "Login de empleados",
       "auditLog": "Auditoría de acciones",

@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { Apple, Smartphone } from "lucide-react";
+
+// Links das lojas de aplicativos
+const APP_STORE_LINKS = {
+  ios: "https://apps.apple.com/br/app/controle-de-maquina/id6754709677",
+  android: "https://play.google.com/store/apps/details?id=com.controledemaquina", // TODO: Adicionar link real quando disponível
+};
 
 export default function CTASection() {
   const { t } = useTranslation();
@@ -53,6 +60,34 @@ export default function CTASection() {
               <span>✓ {t('ctaSection.benefits.free')}</span>
               <span>✓ {t('ctaSection.benefits.noCard')}</span>
               <span>✓ {t('ctaSection.benefits.cancel')}</span>
+            </div>
+
+            {/* App Store Badges */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+              <a
+                href={APP_STORE_LINKS.ios}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition-colors"
+              >
+                <Apple className="w-6 h-6" />
+                <div className="text-left">
+                  <div className="text-xs opacity-80">{t('ctaSection.downloadOn', { defaultValue: 'Baixar na' })}</div>
+                  <div className="text-sm font-semibold">App Store</div>
+                </div>
+              </a>
+              <a
+                href="https://app.controledemaquina.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-5 py-3 rounded-xl hover:bg-primary-foreground/90 transition-colors"
+              >
+                <Smartphone className="w-6 h-6" />
+                <div className="text-left">
+                  <div className="text-xs opacity-80">{t('ctaSection.accessWeb', { defaultValue: 'Acessar via' })}</div>
+                  <div className="text-sm font-semibold">Web App</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -115,6 +150,20 @@ export default function CTASection() {
                   </a>
                 </li>
               </ul>
+              
+              {/* App Store Links */}
+              <div className="pt-4 space-y-2">
+                <h4 className="font-semibold text-sm">{t('footerSection.downloadApp', { defaultValue: 'Baixe o App' })}</h4>
+                <a
+                  href={APP_STORE_LINKS.ios}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition-colors text-xs"
+                >
+                  <Apple className="w-4 h-4" />
+                  <span>App Store</span>
+                </a>
+              </div>
             </div>
           </div>
 

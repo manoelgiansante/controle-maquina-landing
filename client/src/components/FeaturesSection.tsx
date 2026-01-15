@@ -1,4 +1,4 @@
-import { Bell, Droplet, Wrench, Smartphone, MapPin, Shield, ClipboardCheck, CircleDot, AlertTriangle, BarChart3, MessageCircle, Users } from "lucide-react";
+import { Bell, Droplet, Wrench, Smartphone, MapPin, Shield, ClipboardCheck, CircleDot, AlertTriangle, BarChart3, MessageCircle, Users, Bot, Wheat } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const FEATURE_KEYS = [
@@ -6,6 +6,8 @@ const FEATURE_KEYS = [
   { key: 'geofence', icon: Shield },
   { key: 'whatsapp', icon: MessageCircle },
   { key: 'anomaly', icon: AlertTriangle },
+  { key: 'chatbot', icon: Bot },
+  { key: 'activityCost', icon: Wheat },
   { key: 'checklist', icon: ClipboardCheck },
   { key: 'tires', icon: CircleDot },
   { key: 'tank', icon: Droplet },

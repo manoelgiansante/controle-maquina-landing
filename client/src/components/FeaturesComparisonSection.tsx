@@ -68,7 +68,9 @@ const features: FeatureCategory[] = [
       { key: "anomalyDetection", free: false, basic: false, pro: true, enterprise: true },
       { key: "areaManagement", free: false, basic: false, pro: true, enterprise: true },
       { key: "costPerHectare", free: false, basic: false, pro: true, enterprise: true },
+      { key: "activityCost", free: false, basic: false, pro: true, enterprise: true },
       { key: "multipleProperties", free: false, basic: false, pro: true, enterprise: true },
+      { key: "chatbotAI", free: true, basic: true, pro: true, enterprise: true },
     ],
   },
   {

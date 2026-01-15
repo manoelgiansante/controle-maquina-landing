@@ -55,10 +55,10 @@ const PLAN_FEATURES: Record<PlanId, { key: string; included: boolean }[]> = {
     { key: 'maintenanceControl', included: true },
     { key: 'tankControl', included: true },
     { key: 'maintenanceAlerts', included: true },
+    { key: 'whatsappAlerts', included: true },
+    { key: 'basicReports', included: true },
     { key: 'offlineMode', included: true },
     { key: 'dashboard', included: false },
-    { key: 'tireManagement', included: false },
-    { key: 'machineChecklists', included: false },
   ],
   basic: [
     { key: 'upTo10Machines', included: true },
@@ -69,7 +69,7 @@ const PLAN_FEATURES: Record<PlanId, { key: string; included: boolean }[]> = {
     { key: 'exportExcelPdf', included: true },
     { key: 'advancedReports', included: true },
     { key: 'emailSupport', included: true },
-    { key: 'operatorManagement', included: false },
+    { key: 'operatorManagement', included: true },
     { key: 'gpsTracking', included: false },
   ],
   pro: [
