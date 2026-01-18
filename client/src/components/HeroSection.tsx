@@ -9,8 +9,8 @@ export default function HeroSection() {
   const isSpanish = i18n.language?.startsWith('es');
   const videoId = isSpanish ? 'WPSSo9Qc3gY' : 'ooa6azIu1Qk';
   const videoTitle = isSpanish 
-    ? 'Control de Maquinaria - ¡Deja de perder diésel!' 
-    : 'Controle de Máquina - Pare de perder diesel!';
+    ? 'Rumo Máquinas - ¡Deja de perder diésel!' 
+    : 'Rumo Máquinas - Pare de perder diesel!';
 
   const handleCTA = () => {
     // Dispara eventos no Facebook Pixel para otimização de campanhas

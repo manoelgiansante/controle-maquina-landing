@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Control de Maquinaria"
+    "name": "Rumo Máquinas"
   },
   "navbar": {
     "features": "Funciones",
@@ -10,7 +10,7 @@
     "freeTrial": "Prueba Gratis"
   },
   "hero": {
-    "badge": "NUEVO: GPS Control de Maquinaria",
+    "badge": "NUEVO: GPS Rumo Máquinas",
     "year": "2026",
     "title": "Control total de tu",
     "titleHighlight": "flota agrícola",
@@ -120,7 +120,7 @@
       }
     },
     "solution": {
-      "title": "✅ Control de Maquinaria resuelve todo esto",
+      "title": "✅ Rumo Máquinas resuelve todo esto",
       "subtitle": "Gestión completa en una sola aplicación"
     }
   },
@@ -333,11 +333,11 @@
     "privacy": "Privacidad",
     "terms": "Términos de Uso",
     "contact": "Contacto",
-    "copyright": "© 2026 Control de Maquinaria. Todos los derechos reservados."
+    "copyright": "© 2026 Rumo Máquinas. Todos los derechos reservados."
   },
   "whatsapp": {
     "tooltip": "Habla con nosotros",
-    "message": "¡Hola! Tengo interés en Control de Maquinaria y me gustaría aclarar algunas dudas."
+    "message": "¡Hola! Tengo interés en Rumo Máquinas y me gustaría aclarar algunas dudas."
   },
   "languageSelector": {
     "title": "Idioma"
@@ -388,7 +388,7 @@
     "terms": "Términos de Uso",
     "privacy": "Privacidad",
     "downloadApp": "Descarga la App",
-    "copyright": "© 2026 Control de Maquinaria. Todos los derechos reservados.",
+    "copyright": "© 2026 Rumo Máquinas. Todos los derechos reservados.",
     "description": "Gestión inteligente de máquinas agrícolas"
   },
   "featuresSection": {
@@ -413,7 +413,7 @@
       },
       "chatbot": {
         "title": "Chatbot con IA",
-        "description": "Asistente virtual inteligente 24/7. Resuelve dudas sobre el sistema en cualquier momento. ¡Entrenado específicamente en Control de Maquinaria!"
+        "description": "Asistente virtual inteligente 24/7. Resuelve dudas sobre el sistema en cualquier momento. ¡Entrenado específicamente en Rumo Máquinas!"
       },
       "activityCost": {
         "title": "Costo por Actividad Agrícola",
@@ -457,7 +457,7 @@
     "items": {
       "q1": {
         "question": "¿Funciona en iOS y Android?",
-        "answer": "¡Sí! Control de Maquinaria está disponible para Web, iOS y Android con sincronización automática entre todos los dispositivos. ¡Recibes notificaciones Push directamente en el celular!"
+        "answer": "¡Sí! Rumo Máquinas está disponible para Web, iOS y Android con sincronización automática entre todos los dispositivos. ¡Recibes notificaciones Push directamente en el celular!"
       },
       "q2": {
         "question": "¿Necesito internet?",
@@ -468,7 +468,7 @@
         "answer": "En el Plan Pro tienes 1 rastreador GPS incluido, en Enterprise 3 GPS incluidos, y en Prestador Pro 2 GPS incluidos. Si necesitas más GPS, puedes contratar adicional: Pro $4/mes, Enterprise $3/mes, Prestador $3.50/mes por máquina."
       },
       "q4": {
-        "question": "¿Cómo funciona el GPS Control de Maquinaria?",
+        "question": "¿Cómo funciona el GPS Rumo Máquinas?",
         "answer": "Ofrecemos rastreadores GPS en modelo de comodato con $60 de depósito reembolsable. Cada plan ya incluye GPS: Pro (1), Enterprise (3), Prestador (2). GPS extras varían de $3 a $4/mes por máquina según el plan. ¡Visualiza en tiempo real en el mapa, historial de trayectos y alertas!"
       },
       "q5": {
@@ -505,7 +505,7 @@
       },
       "q13": {
         "question": "¿Tienen Chatbot?",
-        "answer": "¡Sí! Tenemos un asistente virtual con IA disponible 24/7 directo en la app. Fue entrenado específicamente en Control de Maquinaria y puede resolver todas tus dudas sobre el sistema."
+        "answer": "¡Sí! Tenemos un asistente virtual con IA disponible 24/7 directo en la app. Fue entrenado específicamente en Rumo Máquinas y puede resolver todas tus dudas sobre el sistema."
       },
       "q14": {
         "question": "¿Qué es Costo por Actividad?",

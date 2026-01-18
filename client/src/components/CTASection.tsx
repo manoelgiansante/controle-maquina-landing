@@ -63,7 +63,7 @@ export default function CTASection() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="space-y-4">
-              <h3 className="font-bold text-lg">{t('app.name', { defaultValue: 'Controle de Máquina' })}</h3>
+              <h3 className="font-bold text-lg">{t('app.name', { defaultValue: 'Rumo Máquinas' })}</h3>
               <p className="text-sm text-muted-foreground">
                 {t('footerSection.description')}
               </p>
