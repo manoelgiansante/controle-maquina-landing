@@ -9,8 +9,8 @@ export default function HeroSection() {
   const isSpanish = i18n.language?.startsWith('es');
   const videoId = isSpanish ? 'WPSSo9Qc3gY' : 'ooa6azIu1Qk';
   const videoTitle = isSpanish 
-    ? 'Rumo Máquinas - ¡Deja de perder diésel!' 
-    : 'Rumo Máquinas - Pare de perder diesel!';
+    ? 'Rumo Finance - ¡Deja de perder diésel!' 
+    : 'Rumo Finance - Pare de perder diesel!';
 
   const handleCTA = () => {
     // Dispara eventos no Facebook Pixel para otimização de campanhas
@@ -116,12 +116,12 @@ export default function HeroSection() {
             {/* Floating Stats Cards */}
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
               <p className="text-sm text-muted-foreground">{t('hero.stats.machines')}</p>
-              <p className="text-2xl font-bold text-primary">10.000+</p>
+              <p className="text-2xl font-bold text-primary">0</p>
               <p className="text-xs text-muted-foreground">{t('hero.stats.monitored')}</p>
             </div>
             <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
               <p className="text-sm text-muted-foreground">{t('hero.stats.producers')}</p>
-              <p className="text-2xl font-bold text-accent">500+</p>
+              <p className="text-2xl font-bold text-accent">0</p>
               <p className="text-xs text-muted-foreground">{t('hero.stats.trustUs')}</p>
             </div>
           </div>

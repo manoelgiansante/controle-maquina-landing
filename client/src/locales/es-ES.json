@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Rumo Máquinas"
+    "name": "Rumo Finance"
   },
   "navbar": {
     "features": "Funciones",
@@ -10,7 +10,7 @@
     "freeTrial": "Prueba Gratis"
   },
   "hero": {
-    "badge": "NUEVO: GPS Rumo Máquinas",
+    "badge": "NUEVO: GPS Rumo Finance",
     "year": "2026",
     "title": "Control total de tu",
     "titleHighlight": "flota agrícola",
@@ -36,11 +36,11 @@
     }
   },
   "stats": {
-    "machines": "+10.000",
+    "machines": "0",
     "machinesLabel": "Máquinas monitoreadas",
-    "producers": "+500",
+    "producers": "0",
     "producersLabel": "Productores rurales",
-    "savings": "20%",
+    "savings": "0%",
     "savingsLabel": "Ahorro en diésel",
     "uptime": "99.9%",
     "uptimeLabel": "Disponibilidad"
@@ -49,12 +49,12 @@
     "title": "Números que Impresionan",
     "items": {
       "machines": {
-        "value": "10.000+",
+        "value": "0",
         "label": "Máquinas Monitoreadas",
         "description": "en toda América Latina"
       },
       "fuel": {
-        "value": "2M+",
+        "value": "0",
         "label": "Litros Controlados",
         "description": "por mes"
       },
@@ -64,7 +64,7 @@
         "description": "iOS, Android y Web"
       },
       "producers": {
-        "value": "500+",
+        "value": "0",
         "label": "Productores",
         "description": "confían en nosotros"
       }
@@ -120,7 +120,7 @@
       }
     },
     "solution": {
-      "title": "✅ Rumo Máquinas resuelve todo esto",
+      "title": "✅ Rumo Finance resuelve todo esto",
       "subtitle": "Gestión completa en una sola aplicación"
     }
   },
@@ -326,18 +326,18 @@
     "title": "¿Listo para ahorrar?",
     "subtitle": "Comienza hoy mismo gratis. Sin tarjeta de crédito.",
     "button": "Comenzar Prueba Gratis",
-    "social": "Más de 500 productores ya confían en nosotros"
+    "social": "Únete a los productores que ya confían en nosotros"
   },
   "footer": {
     "description": "Control completo de tu flota agrícola.",
     "privacy": "Privacidad",
     "terms": "Términos de Uso",
     "contact": "Contacto",
-    "copyright": "© 2026 Rumo Máquinas. Todos los derechos reservados."
+    "copyright": "© 2026 Rumo Finance. Todos los derechos reservados."
   },
   "whatsapp": {
     "tooltip": "Habla con nosotros",
-    "message": "¡Hola! Tengo interés en Rumo Máquinas y me gustaría aclarar algunas dudas."
+    "message": "¡Hola! Tengo interés en Rumo Finance y me gustaría aclarar algunas dudas."
   },
   "languageSelector": {
     "title": "Idioma"
@@ -388,7 +388,7 @@
     "terms": "Términos de Uso",
     "privacy": "Privacidad",
     "downloadApp": "Descarga la App",
-    "copyright": "© 2026 Rumo Máquinas. Todos los derechos reservados.",
+    "copyright": "© 2026 Rumo Finance. Todos los derechos reservados.",
     "description": "Gestión inteligente de máquinas agrícolas"
   },
   "featuresSection": {
@@ -413,7 +413,7 @@
       },
       "chatbot": {
         "title": "Chatbot con IA",
-        "description": "Asistente virtual inteligente 24/7. Resuelve dudas sobre el sistema en cualquier momento. ¡Entrenado específicamente en Rumo Máquinas!"
+        "description": "Asistente virtual inteligente 24/7. Resuelve dudas sobre el sistema en cualquier momento. ¡Entrenado específicamente en Rumo Finance!"
       },
       "activityCost": {
         "title": "Costo por Actividad Agrícola",
@@ -457,7 +457,7 @@
     "items": {
       "q1": {
         "question": "¿Funciona en iOS y Android?",
-        "answer": "¡Sí! Rumo Máquinas está disponible para Web, iOS y Android con sincronización automática entre todos los dispositivos. ¡Recibes notificaciones Push directamente en el celular!"
+        "answer": "¡Sí! Rumo Finance está disponible para Web, iOS y Android con sincronización automática entre todos los dispositivos. ¡Recibes notificaciones Push directamente en el celular!"
       },
       "q2": {
         "question": "¿Necesito internet?",
@@ -468,7 +468,7 @@
         "answer": "En el Plan Pro tienes 1 rastreador GPS incluido, en Enterprise 3 GPS incluidos, y en Prestador Pro 2 GPS incluidos. Si necesitas más GPS, puedes contratar adicional: Pro $4/mes, Enterprise $3/mes, Prestador $3.50/mes por máquina."
       },
       "q4": {
-        "question": "¿Cómo funciona el GPS Rumo Máquinas?",
+        "question": "¿Cómo funciona el GPS Rumo Finance?",
         "answer": "Ofrecemos rastreadores GPS en modelo de comodato con $60 de depósito reembolsable. Cada plan ya incluye GPS: Pro (1), Enterprise (3), Prestador (2). GPS extras varían de $3 a $4/mes por máquina según el plan. ¡Visualiza en tiempo real en el mapa, historial de trayectos y alertas!"
       },
       "q5": {
@@ -505,7 +505,7 @@
       },
       "q13": {
         "question": "¿Tienen Chatbot?",
-        "answer": "¡Sí! Tenemos un asistente virtual con IA disponible 24/7 directo en la app. Fue entrenado específicamente en Rumo Máquinas y puede resolver todas tus dudas sobre el sistema."
+        "answer": "¡Sí! Tenemos un asistente virtual con IA disponible 24/7 directo en la app. Fue entrenado específicamente en Rumo Finance y puede resolver todas tus dudas sobre el sistema."
       },
       "q14": {
         "question": "¿Qué es Costo por Actividad?",

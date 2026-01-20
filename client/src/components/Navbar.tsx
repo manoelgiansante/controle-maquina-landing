@@ -57,8 +57,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Rumo Máquinas" className="w-10 h-10 rounded-lg" />
-            <span className="font-bold text-lg">Rumo Máquinas</span>
+            <img src="/logo.png" alt="Rumo Finance" className="w-10 h-10 rounded-lg" />
+            <span className="font-bold text-lg">Rumo Finance</span>
           </div>
 
           {/* Desktop Navigation */}
