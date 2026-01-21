@@ -9,8 +9,8 @@ export default function HeroSection() {
   const isSpanish = i18n.language?.startsWith('es');
   const videoId = isSpanish ? 'WPSSo9Qc3gY' : 'ooa6azIu1Qk';
   const videoTitle = isSpanish 
-    ? 'Rumo Finance - ¡Deja de perder diésel!' 
-    : 'Rumo Finance - Pare de perder diesel!';
+    ? 'Rumo Maquinas - ¡Deja de perder diésel!' 
+    : 'Rumo Maquinas - Pare de perder diesel!';
 
   const handleCTA = () => {
     // Dispara eventos no Facebook Pixel para otimização de campanhas
