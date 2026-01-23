@@ -123,12 +123,17 @@ export default function Navbar() {
 
           {/* Mobile CTA */}
           <div className="md:hidden flex items-center gap-2">
+            {/* App Store Download Button - Mobile */}
+            <a
+              href={APP_STORE_LINKS.ios}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-black text-white px-2 py-1 rounded-lg hover:bg-gray-800 transition-colors"
+            >
+              <Apple className="w-4 h-4" />
+              <span className="text-[10px] font-semibold">iOS</span>
+            </a>
             <LanguageSelector />
-            <Button variant="outline" size="sm" onClick={() => {
-              window.location.href = "https://app.controledemaquina.com.br/login";
-            }}>
-              {t('navbar.enter')}
-            </Button>
             <Button size="sm" onClick={handleCTA}>
               {t('navbar.freeTrial')}
             </Button>
