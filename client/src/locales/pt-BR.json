@@ -367,12 +367,12 @@
   },
   "ctaSection": {
     "title": "Simplifique a gestão da sua frota hoje",
-    "subtitle": "GPS, alertas, combustível e manutenções em um único app. Teste grátis por 7 dias, sem cartão.",
-    "button": "Começar Teste Grátis de 7 Dias",
+    "subtitle": "GPS, alertas, combustível e manutenções em um único app. Até 3 máquinas grátis, sem cartão.",
+    "button": "Começar Agora",
     "downloadOn": "Baixar na",
     "accessWeb": "Acessar via",
     "benefits": {
-      "free": "7 dias grátis",
+      "free": "Até 3 máquinas grátis",
       "noCard": "Sem cartão",
       "cancel": "Cancele quando quiser"
     }
