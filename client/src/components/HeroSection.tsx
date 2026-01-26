@@ -112,18 +112,6 @@ export default function HeroSection() {
                 allowFullScreen
               />
             </div>
-
-            {/* Floating Stats Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
-              <p className="text-sm text-muted-foreground">{t('hero.stats.machines')}</p>
-              <p className="text-2xl font-bold text-primary">0</p>
-              <p className="text-xs text-muted-foreground">{t('hero.stats.monitored')}</p>
-            </div>
-            <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg hidden md:block">
-              <p className="text-sm text-muted-foreground">{t('hero.stats.producers')}</p>
-              <p className="text-2xl font-bold text-accent">0</p>
-              <p className="text-xs text-muted-foreground">{t('hero.stats.trustUs')}</p>
-            </div>
           </div>
         </div>
       </div>
