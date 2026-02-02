@@ -377,6 +377,22 @@
       "cancel": "Cancele quando quiser"
     }
   },
+  "downloadSection": {
+    "title": "Baixe o App",
+    "subtitle": "Disponível para iOS, Android e Web",
+    "ios": {
+      "label": "App Store",
+      "description": "iPhone e iPad"
+    },
+    "android": {
+      "label": "Google Play",
+      "description": "Celulares Android"
+    },
+    "web": {
+      "label": "Acessar Web",
+      "description": "Navegador"
+    }
+  },
   "footerSection": {
     "product": "Produto",
     "features": "Funcionalidades",

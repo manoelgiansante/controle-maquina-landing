@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { Apple, Play, Globe } from "lucide-react";
+
+// Links das lojas de aplicativos
+const APP_LINKS = {
+  ios: "https://apps.apple.com/br/app/controle-de-maquina/id6754709677",
+  android: "https://play.google.com/store/apps/details?id=com.manoel.controledemaquina",
+  web: "https://app.controledemaquina.com.br",
+};
 
 export default function CTASection() {
   const { t } = useTranslation();
@@ -29,6 +37,73 @@ export default function CTASection() {
 
   return (
     <>
+      {/* Download Section */}
+      <section className="py-16 md:py-20 bg-muted/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              {t('downloadSection.title')}
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              {t('downloadSection.subtitle')}
+            </p>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              {/* iOS */}
+              <a
+                href={APP_LINKS.ios}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-black text-white p-4 rounded-xl hover:bg-gray-800 transition-colors"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                  <Apple className="w-7 h-7" />
+                </div>
+                <div className="text-left">
+                  <div className="text-xs opacity-70">Download</div>
+                  <div className="text-lg font-semibold">{t('downloadSection.ios.label')}</div>
+                  <div className="text-xs opacity-70">{t('downloadSection.ios.description')}</div>
+                </div>
+              </a>
+              
+              {/* Android */}
+              <a
+                href={APP_LINKS.android}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-black text-white p-4 rounded-xl hover:bg-gray-800 transition-colors"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                  <Play className="w-7 h-7 fill-current" />
+                </div>
+                <div className="text-left">
+                  <div className="text-xs opacity-70">Download</div>
+                  <div className="text-lg font-semibold">{t('downloadSection.android.label')}</div>
+                  <div className="text-xs opacity-70">{t('downloadSection.android.description')}</div>
+                </div>
+              </a>
+              
+              {/* Web */}
+              <a
+                href={APP_LINKS.web}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-primary text-primary-foreground p-4 rounded-xl hover:bg-primary/90 transition-colors"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                  <Globe className="w-7 h-7" />
+                </div>
+                <div className="text-left">
+                  <div className="text-xs opacity-70">Acessar</div>
+                  <div className="text-lg font-semibold">{t('downloadSection.web.label')}</div>
+                  <div className="text-xs opacity-70">{t('downloadSection.web.description')}</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary/90 to-accent">
         <div className="container">
