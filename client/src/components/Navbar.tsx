@@ -7,7 +7,7 @@ import { Apple, Play } from "lucide-react";
 // Links das lojas de aplicativos
 const APP_STORE_LINKS = {
   ios: "https://apps.apple.com/br/app/controle-de-maquina/id6754709677",
-  android: "#", // TODO: Adicionar link da Play Store quando disponível
+  android: "https://play.google.com/store/apps/details?id=com.manoel.controledemaquina",
 };
 
 export default function Navbar() {
