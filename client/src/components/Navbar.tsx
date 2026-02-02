@@ -123,17 +123,25 @@ export default function Navbar() {
 
           {/* Mobile CTA */}
           <div className="md:hidden flex items-center gap-2">
-            {/* App Store Download Button - Mobile */}
+            {/* App Store Download Buttons - Mobile */}
             <a
               href={APP_STORE_LINKS.ios}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-black text-white px-2 py-1 rounded-lg hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center justify-center bg-black text-white p-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+              aria-label="Download iOS"
             >
-              <Apple className="w-4 h-4" />
-              <span className="text-[10px] font-semibold">iOS</span>
+              <Apple className="w-5 h-5" />
             </a>
-            <LanguageSelector />
+            <a
+              href={APP_STORE_LINKS.android}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-black text-white p-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+              aria-label="Download Android"
+            >
+              <Play className="w-5 h-5 fill-current" />
+            </a>
             <Button size="sm" onClick={handleCTA}>
               {t('navbar.freeTrial')}
             </Button>
