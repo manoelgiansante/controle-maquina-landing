@@ -1,6 +1,7 @@
 import { Check, X, Star, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useCoupon } from "@/contexts/CouponContext";
 
 type PlanId = 'free' | 'basic' | 'pro' | 'enterprise';
 
@@ -108,13 +109,14 @@ const PLAN_IDS: PlanId[] = ['free', 'basic', 'pro', 'enterprise'];
 
 export default function FeaturesComparisonSection() {
   const { t } = useTranslation();
+  const { handleCTAClick } = useCoupon();
 
   const handleCTA = (planId: string) => {
     if (planId === "enterprise") {
       const message = t('whatsapp.message');
       window.location.href = `https://wa.me/5517997497208?text=${encodeURIComponent(message)}`;
     } else {
-      window.location.href = "https://app.controledemaquina.com.br/login?mode=register&plan=" + planId;
+      handleCTAClick(`/login?mode=register&plan=${planId}`);
     }
   };
 

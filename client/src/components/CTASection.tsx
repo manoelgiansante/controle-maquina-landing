@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { Apple, Play, Globe } from "lucide-react";
+import { useCoupon } from "@/contexts/CouponContext";
 
 // Links das lojas de aplicativos
 const APP_LINKS = {
@@ -11,29 +12,7 @@ const APP_LINKS = {
 
 export default function CTASection() {
   const { t } = useTranslation();
-
-  const handleCTA = () => {
-    // Dispara eventos no Facebook Pixel para otimização de campanhas
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      // Evento de Lead
-      (window as any).fbq('track', 'Lead', {
-        content_name: 'Criar Conta - Teste Grátis',
-        content_category: 'Signup',
-        value: 0,
-        currency: 'BRL'
-      });
-
-      // Evento de InitiateCheckout com PIX para conversões
-      (window as any).fbq('track', 'InitiateCheckout', {
-        content_name: 'Teste Grátis - PIX',
-        content_category: 'Subscription',
-        value: 19.90,
-        currency: 'BRL',
-        payment_method: 'PIX'
-      });
-    }
-    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
-  };
+  const { handleCTAClick } = useCoupon();
 
   return (
     <>
@@ -119,7 +98,7 @@ export default function CTASection() {
                 size="lg"
                 variant="secondary"
                 className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-shadow"
-                onClick={handleCTA}
+                onClick={() => handleCTAClick()}
               >
                 {t('ctaSection.button')}
               </Button>

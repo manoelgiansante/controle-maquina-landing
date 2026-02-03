@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 import { Apple, Play } from "lucide-react";
+import { useCoupon } from "@/contexts/CouponContext";
 
 // Links das lojas de aplicativos
 const APP_STORE_LINKS = {
@@ -13,6 +14,7 @@ const APP_STORE_LINKS = {
 export default function Navbar() {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const { handleCTAClick } = useCoupon();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,29 +23,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleCTA = () => {
-    // Dispara eventos no Facebook Pixel para otimização de campanhas
-    if (typeof window !== 'undefined' && window.fbq) {
-      // Evento de Lead
-      window.fbq('track', 'Lead', {
-        content_name: 'Criar Conta - Teste Grátis',
-        content_category: 'Signup',
-        value: 0,
-        currency: 'BRL'
-      });
-
-      // Evento de InitiateCheckout com PIX para conversões
-      window.fbq('track', 'InitiateCheckout', {
-        content_name: 'Teste Grátis - PIX',
-        content_category: 'Subscription',
-        value: 19.90,
-        currency: 'BRL',
-        payment_method: 'PIX'
-      });
-    }
-    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
-  };
 
   return (
     <nav
@@ -116,7 +95,7 @@ export default function Navbar() {
             }}>
               {t('navbar.enterApp')}
             </Button>
-            <Button size="sm" onClick={handleCTA}>
+            <Button size="sm" onClick={() => handleCTAClick()}>
               {t('navbar.freeTrial')}
             </Button>
           </div>
@@ -142,7 +121,7 @@ export default function Navbar() {
             >
               <Play className="w-5 h-5 fill-current" />
             </a>
-            <Button size="sm" onClick={handleCTA}>
+            <Button size="sm" onClick={() => handleCTAClick()}>
               {t('navbar.freeTrial')}
             </Button>
           </div>

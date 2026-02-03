@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Check, X, Star, Zap } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useCoupon } from "@/contexts/CouponContext";
 
 // Stripe Payment Links - BRL (Português)
 const STRIPE_PAYMENT_LINKS_BRL = {
@@ -123,6 +124,7 @@ export default function PricingSectionNew() {
   const isSpanish = i18n.language?.startsWith('es');
   const currency = isSpanish ? '$' : 'R$';
   const paymentLinks = isSpanish ? STRIPE_PAYMENT_LINKS_USD : STRIPE_PAYMENT_LINKS_BRL;
+  const { handleCTAClick } = useCoupon();
 
   const handleCTA = (planId: string) => {
     // Facebook Pixel events
@@ -156,9 +158,9 @@ export default function PricingSectionNew() {
       });
     }
 
-    // Free plan - go directly to app
+    // Free plan - go directly to app (with coupon modal)
     if (planId === "free") {
-      window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
+      handleCTAClick();
       return;
     }
 

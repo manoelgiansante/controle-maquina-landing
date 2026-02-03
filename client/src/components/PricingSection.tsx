@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
+import { useCoupon } from "@/contexts/CouponContext";
 
 const plans = [
   {
@@ -41,28 +42,7 @@ const plans = [
 ];
 
 export default function PricingSection() {
-  const handleCTA = () => {
-    // Dispara eventos no Facebook Pixel para otimização de campanhas
-    if (typeof window !== 'undefined' && window.fbq) {
-      // Evento de Lead
-      window.fbq('track', 'Lead', {
-        content_name: 'Criar Conta - Teste Grátis',
-        content_category: 'Signup',
-        value: 0,
-        currency: 'BRL'
-      });
-
-      // Evento de InitiateCheckout com PIX para conversões
-      window.fbq('track', 'InitiateCheckout', {
-        content_name: 'Teste Grátis - PIX',
-        content_category: 'Subscription',
-        value: 19.90,
-        currency: 'BRL',
-        payment_method: 'PIX'
-      });
-    }
-    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
-  };
+  const { handleCTAClick } = useCoupon();
 
   return (
     <section id="precos" className="py-16 md:py-24 bg-background">
@@ -135,7 +115,7 @@ export default function PricingSection() {
                 size="lg"
                 variant={plan.popular ? "default" : "outline"}
                 className="w-full text-lg"
-                onClick={handleCTA}
+                onClick={() => handleCTAClick()}
               >
                 {plan.popular ? "Começar Agora" : "Testar Grátis 7 Dias"}
               </Button>

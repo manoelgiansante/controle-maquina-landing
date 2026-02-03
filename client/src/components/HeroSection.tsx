@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Check, MapPin, Shield, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useCoupon } from "@/contexts/CouponContext";
 
 export default function HeroSection() {
   const { t, i18n } = useTranslation();
+  const { handleCTAClick } = useCoupon();
 
   // Vídeo diferente para cada idioma
   const isSpanish = i18n.language?.startsWith('es');
@@ -11,29 +13,6 @@ export default function HeroSection() {
   const videoTitle = isSpanish 
     ? 'Rumo Maquinas - ¡Deja de perder diésel!' 
     : 'Rumo Maquinas - Pare de perder diesel!';
-
-  const handleCTA = () => {
-    // Dispara eventos no Facebook Pixel para otimização de campanhas
-    if (typeof window !== 'undefined' && window.fbq) {
-      // Evento de Lead
-      window.fbq('track', 'Lead', {
-        content_name: 'Criar Conta - Teste Grátis',
-        content_category: 'Signup',
-        value: 0,
-        currency: 'BRL'
-      });
-
-      // Evento de InitiateCheckout com PIX para conversões
-      window.fbq('track', 'InitiateCheckout', {
-        content_name: 'Teste Grátis - PIX',
-        content_category: 'Subscription',
-        value: 19.90,
-        currency: 'BRL',
-        payment_method: 'PIX'
-      });
-    }
-    window.location.href = "https://app.controledemaquina.com.br/login?mode=register";
-  };
 
   const benefits = [
     { icon: MapPin, textKey: "hero.benefits.gps" },
@@ -84,7 +63,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-shadow"
-                onClick={handleCTA}
+                onClick={() => handleCTAClick()}
               >
                 {t('hero.ctaStart')}
               </Button>
