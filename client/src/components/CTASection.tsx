@@ -12,7 +12,7 @@ const APP_LINKS = {
 
 export default function CTASection() {
   const { t } = useTranslation();
-  const { handleCTAClick } = useCoupon();
+  const { handleCTAClick, handleExternalClick } = useCoupon();
 
   return (
     <>
@@ -29,10 +29,8 @@ export default function CTASection() {
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
               {/* iOS */}
-              <a
-                href={APP_LINKS.ios}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleExternalClick(APP_LINKS.ios)}
                 className="flex items-center gap-4 bg-black text-white p-4 rounded-xl hover:bg-gray-800 transition-colors"
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
@@ -43,13 +41,11 @@ export default function CTASection() {
                   <div className="text-lg font-semibold">{t('downloadSection.ios.label')}</div>
                   <div className="text-xs opacity-70">{t('downloadSection.ios.description')}</div>
                 </div>
-              </a>
+              </button>
               
               {/* Android */}
-              <a
-                href={APP_LINKS.android}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleExternalClick(APP_LINKS.android)}
                 className="flex items-center gap-4 bg-black text-white p-4 rounded-xl hover:bg-gray-800 transition-colors"
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
@@ -60,13 +56,11 @@ export default function CTASection() {
                   <div className="text-lg font-semibold">{t('downloadSection.android.label')}</div>
                   <div className="text-xs opacity-70">{t('downloadSection.android.description')}</div>
                 </div>
-              </a>
+              </button>
               
               {/* Web */}
-              <a
-                href={APP_LINKS.web}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleCTAClick("/login?mode=register")}
                 className="flex items-center gap-4 bg-primary text-primary-foreground p-4 rounded-xl hover:bg-primary/90 transition-colors"
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
@@ -77,7 +71,7 @@ export default function CTASection() {
                   <div className="text-lg font-semibold">{t('downloadSection.web.label')}</div>
                   <div className="text-xs opacity-70">{t('downloadSection.web.description')}</div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </div>

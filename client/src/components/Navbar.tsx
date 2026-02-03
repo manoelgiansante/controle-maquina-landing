@@ -14,7 +14,7 @@ const APP_STORE_LINKS = {
 export default function Navbar() {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
-  const { handleCTAClick } = useCoupon();
+  const { handleCTAClick, handleExternalClick } = useCoupon();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,10 +44,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             {/* App Store Download Buttons */}
             <div className="flex items-center gap-2">
-              <a
-                href={APP_STORE_LINKS.ios}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleExternalClick(APP_STORE_LINKS.ios)}
                 className="inline-flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
               >
                 <Apple className="w-5 h-5" />
@@ -55,24 +53,17 @@ export default function Navbar() {
                   <div className="text-[8px] opacity-70">Download</div>
                   <div className="text-xs font-semibold">App Store</div>
                 </div>
-              </a>
-              <a
-                href={APP_STORE_LINKS.android}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg transition-colors ${APP_STORE_LINKS.android === "#" ? "opacity-50 cursor-not-allowed" : "hover:bg-gray-800"}`}
-                onClick={(e) => {
-                  if (APP_STORE_LINKS.android === "#") {
-                    e.preventDefault();
-                  }
-                }}
+              </button>
+              <button
+                onClick={() => handleExternalClick(APP_STORE_LINKS.android)}
+                className="inline-flex items-center gap-2 bg-black text-white px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
               >
                 <Play className="w-5 h-5 fill-current" />
                 <div className="text-left leading-tight">
-                  <div className="text-[8px] opacity-70">{APP_STORE_LINKS.android === "#" ? "Em breve" : "Download"}</div>
+                  <div className="text-[8px] opacity-70">Download</div>
                   <div className="text-xs font-semibold">Google Play</div>
                 </div>
-              </a>
+              </button>
             </div>
 
             <div className="h-6 w-px bg-border" />
@@ -90,9 +81,7 @@ export default function Navbar() {
               {t('navbar.pricing')}
             </a>
             <LanguageSelector />
-            <Button variant="outline" size="sm" onClick={() => {
-              window.location.href = "https://app.controledemaquina.com.br/login";
-            }}>
+            <Button variant="outline" size="sm" onClick={() => handleCTAClick("/login")}>
               {t('navbar.enterApp')}
             </Button>
             <Button size="sm" onClick={() => handleCTAClick()}>
@@ -103,24 +92,20 @@ export default function Navbar() {
           {/* Mobile CTA */}
           <div className="md:hidden flex items-center gap-2">
             {/* App Store Download Buttons - Mobile */}
-            <a
-              href={APP_STORE_LINKS.ios}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleExternalClick(APP_STORE_LINKS.ios)}
               className="inline-flex items-center justify-center bg-black text-white p-1.5 rounded-lg hover:bg-gray-800 transition-colors"
               aria-label="Download iOS"
             >
               <Apple className="w-5 h-5" />
-            </a>
-            <a
-              href={APP_STORE_LINKS.android}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              onClick={() => handleExternalClick(APP_STORE_LINKS.android)}
               className="inline-flex items-center justify-center bg-black text-white p-1.5 rounded-lg hover:bg-gray-800 transition-colors"
               aria-label="Download Android"
             >
               <Play className="w-5 h-5 fill-current" />
-            </a>
+            </button>
             <Button size="sm" onClick={() => handleCTAClick()}>
               {t('navbar.freeTrial')}
             </Button>
