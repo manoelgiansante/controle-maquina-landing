@@ -22,10 +22,11 @@ export default function FeaturesSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="funcionalidades" className="py-16 md:py-24 bg-background">
+    <section id="funcionalidades" className="py-20 md:py-28 bg-background">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <span className="section-label mb-4 inline-flex">Funcionalidades</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-4">
             {t('featuresSection.title')}
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -33,18 +34,20 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {FEATURE_KEYS.map((feature) => {
             const Icon = feature.icon;
             return (
               <div
                 key={feature.key}
-                className="group space-y-4 p-6 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+                className="group relative space-y-4 p-6 rounded-2xl border border-border bg-card hover:border-primary/40 hover:shadow-lg transition-all duration-300 overflow-hidden"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <Icon className="w-7 h-7 text-primary" />
+                {/* Top accent on hover */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/60 to-accent/40 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-base font-bold">
                   {t(`featuresSection.items.${feature.key}.title`)}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
